@@ -1,0 +1,254 @@
+fileFormatVersion: 2
+guid: 017788e628ba0d7468fc7f8cd2a76fd8
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ArmL
+    100002: ArmR
+    100004: Beacon
+    100006: Body 1
+    100008: BoltL
+    100010: BoltR
+    100012: Claw1L
+    100014: Claw1R
+    100016: Claw2L
+    100018: Claw2R
+    100020: Dome
+    100022: Face
+    100024: Insides1
+    100026: Insides2
+    100028: LeftArm
+    100030: LeftLeg
+    100032: LegL
+    100034: LegR
+    100036: LRing1
+    100038: LRing2
+    100040: LRing3
+    100042: polySurface1
+    100044: polySurface2
+    100046: polySurface3
+    100048: polySurface4
+    100050: RightArm
+    100052: RightLeg
+    100054: //RootNode
+    100056: RRIng1
+    100058: RRing1
+    100060: RRing3
+    100062: ShoulderL
+    100064: ShoulderR
+    100066: Torso
+    100068: Transmitter
+    100070: WristL
+    100072: WristR
+    400000: ArmL
+    400002: ArmR
+    400004: Beacon
+    400006: Body 1
+    400008: BoltL
+    400010: BoltR
+    400012: Claw1L
+    400014: Claw1R
+    400016: Claw2L
+    400018: Claw2R
+    400020: Dome
+    400022: Face
+    400024: Insides1
+    400026: Insides2
+    400028: LeftArm
+    400030: LeftLeg
+    400032: LegL
+    400034: LegR
+    400036: LRing1
+    400038: LRing2
+    400040: LRing3
+    400042: polySurface1
+    400044: polySurface2
+    400046: polySurface3
+    400048: polySurface4
+    400050: RightArm
+    400052: RightLeg
+    400054: //RootNode
+    400056: RRIng1
+    400058: RRing1
+    400060: RRing3
+    400062: ShoulderL
+    400064: ShoulderR
+    400066: Torso
+    400068: Transmitter
+    400070: WristL
+    400072: WristR
+    2100000: lambert2
+    2100002: lambert1
+    2100004: typeBlinn
+    2300000: ArmL
+    2300002: ArmR
+    2300004: Beacon
+    2300006: Body 1
+    2300008: BoltL
+    2300010: BoltR
+    2300012: Claw1L
+    2300014: Claw1R
+    2300016: Claw2L
+    2300018: Claw2R
+    2300020: Dome
+    2300022: Insides1
+    2300024: Insides2
+    2300026: LegL
+    2300028: LegR
+    2300030: LRing1
+    2300032: LRing2
+    2300034: LRing3
+    2300036: polySurface1
+    2300038: polySurface2
+    2300040: polySurface3
+    2300042: polySurface4
+    2300044: RRIng1
+    2300046: RRing1
+    2300048: RRing3
+    2300050: ShoulderL
+    2300052: ShoulderR
+    2300054: Transmitter
+    2300056: WristL
+    2300058: WristR
+    3300000: ArmL
+    3300002: ArmR
+    3300004: Beacon
+    3300006: Body 1
+    3300008: BoltL
+    3300010: BoltR
+    3300012: Claw1L
+    3300014: Claw1R
+    3300016: Claw2L
+    3300018: Claw2R
+    3300020: Dome
+    3300022: Insides1
+    3300024: Insides2
+    3300026: LegL
+    3300028: LegR
+    3300030: LRing1
+    3300032: LRing2
+    3300034: LRing3
+    3300036: polySurface1
+    3300038: polySurface2
+    3300040: polySurface3
+    3300042: polySurface4
+    3300044: RRIng1
+    3300046: RRing1
+    3300048: RRing3
+    3300050: ShoulderL
+    3300052: ShoulderR
+    3300054: Transmitter
+    3300056: WristL
+    3300058: WristR
+    4300000: Dome
+    4300002: Body
+    4300004: Transmitter
+    4300006: Beacon
+    4300008: Insides1
+    4300010: Insides2
+    4300012: ShoulderR
+    4300014: ArmR
+    4300016: Claw1R
+    4300018: BoltR
+    4300020: Claw2R
+    4300022: WristR
+    4300024: ShoulderL
+    4300026: ArmL
+    4300028: WristL
+    4300030: Claw2L
+    4300032: Claw1L
+    4300034: BoltL
+    4300036: RRing1
+    4300038: RRing3
+    4300040: RRIng1
+    4300042: LegR
+    4300044: LRing1
+    4300046: LRing2
+    4300048: LRing3
+    4300050: LegL
+    4300052: polySurface1
+    4300054: polySurface2
+    4300056: polySurface3
+    4300058: polySurface4
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
