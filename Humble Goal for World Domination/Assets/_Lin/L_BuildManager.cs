@@ -18,8 +18,11 @@ public class L_BuildManager : MonoBehaviour
     public bool CanBuild { get { return towerInfo != null; } }
     public bool HasMoney { get { return totalMoney >= towerInfo.cost; } }
     public Text moneyText;
-
-  
+    public Transform targeTransform;
+    //Score 
+    public int totalScore;
+    public Text scoreBoard;
+    public List<WayPoints> wayP;
     void Awake()
     {
         if (instance != null)
@@ -29,15 +32,16 @@ public class L_BuildManager : MonoBehaviour
         }
         instance = this;
     }
-    void Start () {
-		
-	}
+    void Start ()
+    {
+        targeTransform = GameObject.FindGameObjectWithTag("Target").transform;
+    }
  
 
     void Update ()
 	{
 	    moneyText.text = totalMoney.ToString();
-        
+	    scoreBoard.text = totalScore.ToString();
 	}
 
     public void AddMoney()
@@ -78,5 +82,10 @@ public class L_BuildManager : MonoBehaviour
     public void ButtonClick()
     {
         Debug.Log("This Button Clicked");
+    }
+
+    public void AddScore(int scores)
+    {
+        totalScore += scores;
     }
 }
