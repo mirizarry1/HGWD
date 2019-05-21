@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class L_Units : MonoBehaviour {
 
@@ -9,19 +10,24 @@ public class L_Units : MonoBehaviour {
     //private NavMeshAgent unit;
     private float unitSpeed;
     public float health;
+    private float maxHealth;
+    public bool isDead;
     //Way point 
     [SerializeField] private Transform targetWayPoint;
     [SerializeField] private int wayPointIndex = 0;
     public WayPoints WP;
     public float speed;
     public int waypoint;
+
+    public  Slider healthSlider;
+    //private L_Friendship[] friendUnit;
     void Start ()
     {
+
         WP = L_BuildManager.instance.wayP[waypoint];
-        //target = L_BuildManager.instance.targeTransform;
-        //unit = GetComponent<NavMeshAgent>();
-        //unitSpeed = unit.speed;
+        maxHealth = health;
         targetWayPoint = WP.wayPoints[wayPointIndex];
+        //healthSlider = GetComponent<Slider>();
     }
 	
 
@@ -32,8 +38,9 @@ public class L_Units : MonoBehaviour {
 	    
 
         if ( health<= 0)
-	    {
-	        print("Unit died");
+        {
+            isDead = true;
+            print("Unit died");
 	        Destroy(gameObject);
 	    }
 	    Vector3 direction = targetWayPoint.position - transform.position;
@@ -43,7 +50,9 @@ public class L_Units : MonoBehaviour {
 	    {
 	        GetNextWayPoint();
 	    }
-    }
+
+	    healthSlider.value = health / maxHealth;
+	}
     private void GetNextWayPoint()
     {
         

@@ -27,23 +27,17 @@ public class L_BuildPoint : MonoBehaviour {
 	void Update () {
 		
 	}
+    
     void OnMouseDown()
     {
         
-        //if (EventSystem.current.IsPointerOverGameObject())
-            //return;
 
-        /*if (turret != null)
-        {
-            buildManager.SelectPoint(this);
-            return;
-        }
-        */
         if (!buildManager.CanBuild)
             return;
 
         BuildTurret(buildManager.GetTurretToBuild());
     }
+    
     public Vector3 GetBuildPosition()
     {
         return transform.position + fixedPosition;
@@ -64,10 +58,15 @@ public class L_BuildPoint : MonoBehaviour {
         turret.GetComponent<L_Units>().waypoint = waypointNum;
         //turretBlueprint = blueprint;
 
-
-
         //Debug.Log("Turret build!");
+
+        
+
+
+
+
     }
+    
     void OnMouseEnter()
     {
         if (EventSystem.current.IsPointerOverGameObject())
@@ -93,4 +92,5 @@ public class L_BuildPoint : MonoBehaviour {
         rend.material.color = startColor;
 
     }
+    
 }
