@@ -8,6 +8,7 @@ TagManager:
   - Score
   - Target
   - SpawnPoint
+  - LevelButton
   layers:
   - Default
   - TransparentFX

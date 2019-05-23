@@ -23,6 +23,10 @@ public class L_BuildManager : MonoBehaviour
     public int totalScore;
     public Text scoreBoard;
     public List<WayPoints> wayP;
+    //
+    public GameObject UiCanvas;
+    public GameObject BuildCanvas;
+    public GameObject ratingCanvas;
     void Awake()
     {
         if (instance != null)
@@ -42,6 +46,12 @@ public class L_BuildManager : MonoBehaviour
 	{
 	    moneyText.text = totalMoney.ToString();
 	    scoreBoard.text = totalScore.ToString();
+	    if (totalScore >= 50)
+	    {
+            UiCanvas.SetActive(false);
+            BuildCanvas.SetActive(false);
+            ratingCanvas.SetActive(true);
+	    }
 	}
 
     public void AddMoney()
