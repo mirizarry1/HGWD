@@ -36,8 +36,11 @@ public class bk_ClickOnSpawnLocation : MonoBehaviour {
             }
         }
     }
-
-   public void printRaycastTarget(GameObject target)
+    private void OnMouseDrag()
+    {
+        print("Im dragging");
+    }
+    public void printRaycastTarget(GameObject target)
     {
         print(target.name);
     }

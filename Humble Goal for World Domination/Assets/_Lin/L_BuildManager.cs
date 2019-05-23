@@ -58,6 +58,11 @@ public class L_BuildManager : MonoBehaviour
     {
         totalMoney += addCircuits;
     }
+
+    public void AddMoney(float multiplier)
+    {
+        totalMoney += ((int)multiplier * addCircuits);
+    }
     public void SelectPoint(L_BuildPoint point)
     {
         if (selectPoint == point)

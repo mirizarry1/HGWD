@@ -22,8 +22,15 @@ public class L_CheckPoint : MonoBehaviour
        
         if (other.tag == "Player")
         {
-            buildManager.AddMoney();
-            Debug.Log("Add Money");
+            if (other.gameObject.GetComponent<bk_UnitCharacteristics>().isCashIncrease == true)
+            {
+                buildManager.AddMoney(2f);
+            }
+            else
+            {
+                buildManager.AddMoney();
+                Debug.Log("Add Money");
+            }
         }
     }
 

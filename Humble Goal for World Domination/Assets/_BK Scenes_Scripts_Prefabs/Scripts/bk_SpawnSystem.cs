@@ -18,7 +18,7 @@ public class bk_SpawnSystem : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		
+        print("Blah");
 	}
 
     public void spawnUnit(int unitType)

@@ -2,20 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class buttonBehavior : MonoBehaviour {
-
+public class buttonBehavior : MonoBehaviour
+{
+    [SerializeField] private GameObject[] untaggedunits;
+    [SerializeField] private Transform spawnpointForDrag;
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		
 	}
 
-    public void buttonClick()
+    public void spawnUnitForDrag(int untaggedUnitToSpawn)
     {
-        print("button was clicked");
+        Instantiate(untaggedunits[untaggedUnitToSpawn], spawnpointForDrag.position, spawnpointForDrag.rotation);
     }
 }

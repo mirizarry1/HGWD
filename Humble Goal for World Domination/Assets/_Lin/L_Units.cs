@@ -8,6 +8,8 @@ public class L_Units : MonoBehaviour {
 
     //private Transform target;
     //private NavMeshAgent unit;
+    enum UnitType {Foddertron,Scrapbot,Armoroton,FriendshipUnit,RX76,Chadbot,Voltron};
+    [SerializeField]private UnitType typeOfUnit;
     private float unitSpeed;
     public float health;
     private float maxHealth;
@@ -21,8 +23,15 @@ public class L_Units : MonoBehaviour {
 
     public  Slider healthSlider;
     //private L_Friendship[] friendUnit;
+   
     void Start ()
     {
+        switch(typeOfUnit)
+        {
+            case UnitType.Scrapbot:
+                print("This is a Scrapbot");
+                break;
+        }
 
         WP = L_BuildManager.instance.wayP[waypoint];
         maxHealth = health;

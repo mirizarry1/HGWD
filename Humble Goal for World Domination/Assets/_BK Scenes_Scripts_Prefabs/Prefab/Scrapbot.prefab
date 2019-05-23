@@ -40,9 +40,10 @@ GameObject:
   - component: {fileID: 114383896776190326}
   - component: {fileID: 54839563832087670}
   - component: {fileID: 136294566707697096}
-  - component: {fileID: 114247406874571284}
+  - component: {fileID: 114006654507453442}
+  - component: {fileID: 114541886528013364}
   m_Layer: 0
-  m_Name: Foddertron
+  m_Name: Scrapbot
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,7 +124,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1506937368569698}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.031142, y: 1, z: 158.27522}
+  m_LocalPosition: {x: -12.103307, y: 1, z: 158.59598}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 224511106672785826}
@@ -145,7 +146,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f64d586649e5d7a458b1a81a5797e67c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -187,6 +188,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114006654507453442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506937368569698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3685a73d84ba8f4e8edd2bf7c1d466c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCashIncrease: 0
 --- !u!114 &114082133213639366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -214,18 +227,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114247406874571284
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1506937368569698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3685a73d84ba8f4e8edd2bf7c1d466c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isCashIncrease: 0
 --- !u!114 &114373706185835782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -248,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 298d102a3829b2945b0d519d13d62d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typeOfUnit: 0
+  typeOfUnit: 1
   health: 5
   isDead: 0
   targetWayPoint: {fileID: 0}
@@ -278,6 +279,17 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114541886528013364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506937368569698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab396665203ab144babf998eae9ed78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114626891704575914
 MonoBehaviour:
   m_ObjectHideFlags: 1
