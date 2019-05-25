@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tower : MonoBehaviour
+public class Tower1 : MonoBehaviour
 {
     [SerializeField] private Transform targetUnit;
     [SerializeField] private float timeSinceLastFire;

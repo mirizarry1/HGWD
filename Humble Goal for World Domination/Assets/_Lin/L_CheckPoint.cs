@@ -20,7 +20,7 @@ public class L_CheckPoint : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
        
-        if (other.tag == "Player")
+        /*if (other.tag == "Player")
         {
             if (other.gameObject.GetComponent<bk_UnitCharacteristics>().isCashIncrease == true)
             {
@@ -31,7 +31,7 @@ public class L_CheckPoint : MonoBehaviour
                 buildManager.AddMoney();
                 Debug.Log("Add Money");
             }
-        }
+        }*/
     }
 
     
