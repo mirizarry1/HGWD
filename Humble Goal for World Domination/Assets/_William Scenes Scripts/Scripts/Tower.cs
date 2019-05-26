@@ -25,6 +25,9 @@ public class Tower : MonoBehaviour
 
         if (targetUnit != null && timeSinceLastFire > coolDowntime)
         {
+            //GameObject bullet = Instantiate(projectile, firePos.position, Quaternion.identity);
+            //bullet.GetComponent<Rigidbody>().velocity = (targetUnit.position - bullet.transform.position) * fireSpeed;
+
             bullet = Instantiate(projectile, firePos.position, Quaternion.identity);
             timeSinceLastFire = 0;
         }
