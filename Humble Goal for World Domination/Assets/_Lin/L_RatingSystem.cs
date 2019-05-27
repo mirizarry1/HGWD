@@ -27,7 +27,7 @@ public class L_RatingSystem : MonoBehaviour
     {
         GL = FindObjectOfType<L_GameLose>().GetComponent<L_GameLose>();
         //Time.timeScale = 0;
-        fixedTime = GL.totalTime / GL.maxtime;
+        fixedTime = GL.maxtime / GL.totalTime;
         CheckRating();
         if (currentLevel > PlayerPrefs.GetInt("CurrentUnlock", 0))
         {

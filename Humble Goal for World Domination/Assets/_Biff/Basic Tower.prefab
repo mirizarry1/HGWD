@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33698643641203330}
   - component: {fileID: 23904293677723356}
   - component: {fileID: 114605940969206846}
+  - component: {fileID: 65572305179312144}
   m_Layer: 0
   m_Name: Basic Tower
   m_TagString: Untagged
@@ -84,6 +85,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1734209252121264}
   m_Mesh: {fileID: 4300000, guid: 8c0d044388a670a4e9ae683a22e0a949, type: 3}
+--- !u!65 &65572305179312144
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1734209252121264}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8338529, y: 0.97879964, z: 0.5800215}
+  m_Center: {x: -0.1269157, y: 0.48939982, z: -0.000000044703494}
 --- !u!114 &114605940969206846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -98,6 +111,6 @@ MonoBehaviour:
   targetUnit: {fileID: 0}
   timeSinceLastFire: 0
   coolDowntime: 0
-  fireSpeed: 5
+  fireSpeed: 50
   firePos: {fileID: 0}
-  projectile: {fileID: 1126777852623612, guid: 7453f1e3bff41f74f803ceff858ced4b, type: 2}
+  projectile: {fileID: 1126777852623612, guid: d133e4c68364ec443b82f1dd544dfca6, type: 2}

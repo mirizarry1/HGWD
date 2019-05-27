@@ -26,7 +26,8 @@ public class L_Units : MonoBehaviour {
    
     void Start ()
     {
-        switch(typeOfUnit)
+        Physics.IgnoreLayerCollision(11, 11);
+        switch (typeOfUnit)
         {
             case UnitType.Scrapbot:
                 print("This is a Scrapbot");
@@ -60,7 +61,7 @@ public class L_Units : MonoBehaviour {
 	        GetNextWayPoint();
 	    }
 
-	    healthSlider.value = health / maxHealth;
+	    //healthSlider.value = health / maxHealth;
 	}
     private void GetNextWayPoint()
     {
