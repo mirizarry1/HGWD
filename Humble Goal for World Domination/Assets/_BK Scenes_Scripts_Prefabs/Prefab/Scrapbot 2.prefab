@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 114541886528013364}
   - component: {fileID: 65100380771215914}
   m_Layer: 0
-  m_Name: Scrapbot 1
+  m_Name: Scrapbot 2
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
