@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 136294566707697096}
   - component: {fileID: 114006654507453442}
   m_Layer: 10
-  m_Name: Scrapbot 1
+  m_Name: Foddertron
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -293,6 +293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeOfUnit: 1
   health: 5
+  maxHealth: 0
   isDead: 0
   targetWayPoint: {fileID: 0}
   wayPointIndex: 0
