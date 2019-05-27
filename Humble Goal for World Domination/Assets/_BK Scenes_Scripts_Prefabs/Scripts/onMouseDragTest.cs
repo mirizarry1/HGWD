@@ -70,8 +70,8 @@ public class onMouseDragTest : MonoBehaviour {
                 }
             }
         }
-        buttonBehavior.instance.isSpawnReady = true;
-        Destroy(this.gameObject);
+        //buttonBehavior.instance.isSpawnReady = true;
+        //Destroy(this.gameObject);
     }
     public void printRaycastTarget(GameObject target)
     {
