@@ -19,9 +19,9 @@ public class L_RatingSystem : MonoBehaviour
     [Header("Should add a number! level 1 is 0, vice versa")]
     public int currentLevel;
     void Start ()
-	{
-	    
-	}
+    {
+        nextButton.interactable = false;
+    }
 
     void OnEnable()
     {
