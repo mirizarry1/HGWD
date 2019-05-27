@@ -12,7 +12,7 @@ public class L_Units : MonoBehaviour {
     [SerializeField]private UnitType typeOfUnit;
     private float unitSpeed;
     public float health;
-    private float maxHealth;
+    public float maxHealth;
     public bool isDead;
     //Way point 
     [SerializeField] private Transform targetWayPoint;
@@ -79,6 +79,10 @@ public class L_Units : MonoBehaviour {
     */
     void OnCollisionEnter(Collision other)
     {
+        if(other.gameObject.tag == "Player")
+        {
+            Physics.IgnoreCollision(other.gameObject.GetComponent<Collider>(), this.gameObject.GetComponent<Collider>());
+        }
         if (other.gameObject.tag == "Target")
         {
             L_BuildManager.instance.AddScore(1);
