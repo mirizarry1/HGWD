@@ -8,23 +8,32 @@ public class bk_AOEBullet : MonoBehaviour
     [SerializeField] float explosionForce; // force put behind the explosion that only affects the enemies
     [SerializeField] LayerMask effectedLayers; // a variable to set what layers are affected by the explosion should be a layer called enemy
     [SerializeField] float damage;
-                                               // Use this for initialization
-    void OnCollisionEnter(Collision col)  // upon the fireball colliding with an object the particle effect goes off and the particle effect and fireball are destroyed
+    // Use this for initialization
+    //void OnCollisionEnter(Collision col)  // upon the fireball colliding with an object the particle effect goes off and the particle effect and fireball are destroyed
+    //{
+    //    Debug.Log("1111111111111");
+
+
+
+    //    AddExplosiveForce(col.contacts[0].point); // the method that performs the AOE affect
+
+    //    print(col.gameObject.name);
+    //    Destroy(gameObject);
+
+    //}
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("1111111111111");
-        
-
-
-        AddExplosiveForce(col.contacts[0].point); // the method that performs the AOE affect
-
-        print(col.gameObject.name);
-        Destroy(gameObject);
-       
+        if (other.gameObject.tag == "Player")
+        {
+            //other.gameObject.GetComponent<L_Units>().health -= damage;
+            AddExplosiveForce(other.transform.position);
+            print("AOE hit the player");
+            Destroy(gameObject);
+        }
     }
-
     void AddExplosiveForce(Vector3 centerOfExplosion)
     {
-        Debug.Log("1111111111111");
+        Debug.Log("222222222");
         Collider[] thingsHit = UnityEngine.Physics.OverlapSphere(centerOfExplosion, explosionRadius, effectedLayers); // methods that detects a radius of collision points to perform AOE effects
         foreach (Collider hit in thingsHit) // for each collider found in detection radius it finds the rigidbody of that object and applies a force to it
         {
@@ -33,7 +42,7 @@ public class bk_AOEBullet : MonoBehaviour
             if (hit.GetComponent<Rigidbody>() != null)
             {
                 hit.gameObject.GetComponent<L_Units>().health-=damage;
-                hit.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, centerOfExplosion, explosionRadius, 0, ForceMode.Impulse); // ads a force to each collider
+                //hit.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, centerOfExplosion, explosionRadius, 0, ForceMode.Impulse); // ads a force to each collider
             }
         }
     }

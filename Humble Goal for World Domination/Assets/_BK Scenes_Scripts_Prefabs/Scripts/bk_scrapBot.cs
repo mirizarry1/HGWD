@@ -9,21 +9,35 @@ public class bk_scrapBot : MonoBehaviour {
     {
       
 	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-        Collider[] nearbyUnits = UnityEngine.Physics.OverlapSphere(this.gameObject.transform.position, 4);
 
-        foreach (Collider objects in nearbyUnits)
+    // Update is called once per frame
+    //void Update ()
+    //   {
+    //       Collider[] nearbyUnits = UnityEngine.Physics.OverlapSphere(this.gameObject.transform.position, 4);
+
+    //       foreach (Collider objects in nearbyUnits)
+    //       {
+    //           if (objects.gameObject != null && objects.tag=="Player")
+    //           {
+    //               print(objects.gameObject.name);
+    //               objects.gameObject.GetComponent<bk_UnitCharacteristics>().isCashIncrease = true;
+    //           }
+    //       }
+    //   }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag=="Player")
         {
-            if (objects.gameObject != null && objects.tag=="Player")
-            {
-                print(objects.gameObject.name);
-                objects.gameObject.GetComponent<bk_UnitCharacteristics>().isCashIncrease = true;
-            }
+            other.GetComponent<bk_UnitCharacteristics>().isCashIncrease = true;
         }
     }
 
-    
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            other.GetComponent<bk_UnitCharacteristics>().isCashIncrease = false;
+        }
+    }
+
 }

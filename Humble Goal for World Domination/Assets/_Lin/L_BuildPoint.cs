@@ -30,12 +30,15 @@ public class L_BuildPoint : MonoBehaviour {
     
     void OnMouseDown()
     {
-        
-
+        print("this gameobject that was clicked on is called: " + this.gameObject.name);
+        buildManager.SelectTurretToBuild(this.gameObject.GetComponent<bk_setUnitForSpawner>().spawnpointUnitType);
         if (!buildManager.CanBuild)
             return;
-
-        BuildTurret(buildManager.GetTurretToBuild());
+        if (this.gameObject.GetComponent<bk_setUnitForSpawner>().spawnpointUnitType.prefab!=null)
+        {
+            //buildManager.SelectTurretToBuild(this.gameObject.GetComponent<bk_setUnitForSpawner>().spawnpointUnitType);
+            BuildTurret(buildManager.GetTurretToBuild());
+        }
     }
     
     public Vector3 GetBuildPosition()

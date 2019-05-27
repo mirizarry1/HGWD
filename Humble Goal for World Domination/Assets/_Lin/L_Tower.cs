@@ -44,7 +44,7 @@ public class L_Tower : MonoBehaviour {
 
     void OnTriggerExit(Collider other)
     {
-        if (other == targetUnit)
+        if (other.transform == targetUnit)
         {
             targetUnit = null;
         }
