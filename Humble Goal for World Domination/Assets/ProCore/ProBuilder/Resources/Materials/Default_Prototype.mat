@@ -7,12 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Default_Prototype
-  m_Shader: {fileID: 4800000, guid: 3a6e79a67e3129f409bae52acc3ab06b, type: 3}
+  m_Shader: {fileID: 4800000, guid: 6b03e25d81ad28043969e841deee35bc, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -80,6 +80,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AlphaTestRef: 0.5
+    - _Ambient: 0.1
     - _Amplitude: 0.33928573
     - _Angle: 0.46428573
     - _BumpScale: 1
@@ -97,6 +98,7 @@ Material:
     - _Phase: 1
     - _Size: 25
     - _SrcBlend: 1
+    - _Treshold: 5
     - _UVSec: 1
     - _Wavelength: 0.17857142
     - _ZWrite: 1
