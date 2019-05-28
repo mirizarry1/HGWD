@@ -29,6 +29,46 @@ public class bk_SceneTransition : MonoBehaviour {
             case 2:
                 SceneManager.LoadScene(2);
                 break;
+            case 3:
+                SceneManager.LoadScene(3);
+                break;
+
+            case 4:
+                SceneManager.LoadScene(4);
+                break;
+            case 5:
+                SceneManager.LoadScene(5);
+                break;
+            case 6:
+                SceneManager.LoadScene(6);
+                break;
+
+            case 7:
+                SceneManager.LoadScene(7);
+                break;
+            case 8:
+                SceneManager.LoadScene(8);
+                break;
+            case 9:
+                SceneManager.LoadScene(9);
+                break;
+
+            case 10:
+                SceneManager.LoadScene(10);
+                break;
+            case 11:
+                SceneManager.LoadScene(11);
+                break;
+            case 12:
+                SceneManager.LoadScene(12);
+                break;
+
+            case 13:
+                SceneManager.LoadScene(13);
+                break;
+            case 14:
+                SceneManager.LoadScene(14);
+                break;
         }
     }
 
