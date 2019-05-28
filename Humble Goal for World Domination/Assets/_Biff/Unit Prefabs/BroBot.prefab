@@ -136,6 +136,9 @@ MonoBehaviour:
   WP: {fileID: 0}
   speed: 5
   waypoint: 0
+  isInvulnerable: 0
+  powerUps: {fileID: 0}
+  alreadySpeedUp: 0
   healthSlider: {fileID: 0}
 --- !u!114 &114890662094899644
 MonoBehaviour:

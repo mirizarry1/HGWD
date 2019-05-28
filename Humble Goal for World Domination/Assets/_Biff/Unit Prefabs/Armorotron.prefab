@@ -21,13 +21,13 @@ GameObject:
   - component: {fileID: 4502904447793480}
   - component: {fileID: 33041899080904122}
   - component: {fileID: 23437468763521360}
-  - component: {fileID: 114838029539292590}
   - component: {fileID: 114330680366027300}
   - component: {fileID: 114723985356711218}
   - component: {fileID: 136059579989011998}
   - component: {fileID: 54740629736024946}
+  - component: {fileID: 114872414597882408}
   m_Layer: 11
-  m_Name: Scrapbot
+  m_Name: Armorotron
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: f9c195014ed51e643acc52a336402f2a, type: 2}
+  - {fileID: 2100000, guid: d7d1094e5fadcb94998fba31bcb210af, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -114,8 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 298d102a3829b2945b0d519d13d62d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typeOfUnit: 1
-  health: 10
+  typeOfUnit: 2
+  health: 30
   maxHealth: 0
   isDead: 0
   targetWayPoint: {fileID: 0}
@@ -123,6 +123,9 @@ MonoBehaviour:
   WP: {fileID: 0}
   speed: 7
   waypoint: 0
+  isInvulnerable: 0
+  powerUps: {fileID: 0}
+  alreadySpeedUp: 0
   healthSlider: {fileID: 0}
 --- !u!114 &114723985356711218
 MonoBehaviour:
@@ -136,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCashIncrease: 0
---- !u!114 &114838029539292590
+--- !u!114 &114872414597882408
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,7 +147,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1284687659871306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ab396665203ab144babf998eae9ed78, type: 3}
+  m_Script: {fileID: 11500000, guid: e97af8f68a596e64fa1b8deeec76091d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!136 &136059579989011998

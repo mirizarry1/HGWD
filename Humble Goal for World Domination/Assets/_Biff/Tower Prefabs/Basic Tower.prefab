@@ -110,7 +110,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetUnit: {fileID: 0}
   timeSinceLastFire: 0
-  coolDowntime: 0
+  coolDowntime: 1
   fireSpeed: 50
   firePos: {fileID: 0}
-  projectile: {fileID: 1126777852623612, guid: d133e4c68364ec443b82f1dd544dfca6, type: 2}
+  projectile: {fileID: 1287659799844238, guid: 4c0759df674624f42b5e30ad712a5517, type: 2}
+  typeOfTower: 0
+  audioManager: {fileID: 0}
