@@ -10,7 +10,7 @@ public class L_BuildPoint : MonoBehaviour {
 
     private L_BuildManager buildManager;
     private Renderer rend;
-    private Color startColor;
+    //private Color startColor;
     public Vector3 fixedPosition = new Vector3(0.5f,.25f,0.5f);
 
     public int waypointNum;
@@ -22,7 +22,7 @@ public class L_BuildPoint : MonoBehaviour {
     void Start ()
     {
         rend = GetComponent<Renderer>();
-        startColor = rend.material.color;
+        //startColor = rend.material.color;
         buildManager = L_BuildManager.instance;
 
         powerUps = GameObject.FindObjectOfType<PowerUps>();
@@ -98,7 +98,7 @@ public class L_BuildPoint : MonoBehaviour {
 
     void OnMouseExit()
     {
-        rend.material.color = startColor;
+        //rend.material.color = startColor;
 
     }
     

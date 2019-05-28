@@ -16,6 +16,7 @@ public class L_Tower : MonoBehaviour {
     [SerializeField] private bk_AudioManager audioManager;
     void Start ()
     {
+        firePos = GetComponent<Transform>();
         audioManager = GameObject.FindObjectOfType<bk_AudioManager>();
 	}
 	
