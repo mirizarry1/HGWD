@@ -25,6 +25,8 @@ GameObject:
   - component: {fileID: 114639815251726696}
   - component: {fileID: 114464284854067834}
   - component: {fileID: 64950776430842456}
+  - component: {fileID: 114274762166588734}
+  - component: {fileID: 114858901764495444}
   m_Layer: 0
   m_Name: 1x1 Tile
   m_TagString: Untagged
@@ -38,13 +40,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1702651558601518}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 6.5648546, y: 1, z: 163.4811}
+  m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!23 &23278473054003508
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -105,6 +107,23 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 0}
+--- !u!114 &114274762166588734
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1702651558601518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3174e6e57d69794f98d5f4d9b9f020d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enterColor: {r: 0, g: 0, b: 0, a: 0}
+  exitColor: {r: 0, g: 0, b: 0, a: 0}
+  turret: {fileID: 0}
+  fixedPosition: {x: 0.5, y: 0.25, z: 0.5}
+  waypointNum: 1
+  powerUps: {fileID: 0}
 --- !u!114 &114464284854067834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -405,6 +424,23 @@ MonoBehaviour:
   m_selectedFaces: 
   m_SelectedEdges: []
   m_selectedTriangles: 
+--- !u!114 &114858901764495444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1702651558601518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3174e6e57d69794f98d5f4d9b9f020d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enterColor: {r: 0, g: 0, b: 0, a: 0}
+  exitColor: {r: 0, g: 0, b: 0, a: 0}
+  turret: {fileID: 0}
+  fixedPosition: {x: 0.5, y: 0.25, z: 0.5}
+  waypointNum: 0
+  powerUps: {fileID: 0}
 --- !u!114 &114887268884559146
 MonoBehaviour:
   m_ObjectHideFlags: 1
