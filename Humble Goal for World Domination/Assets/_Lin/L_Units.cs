@@ -21,6 +21,10 @@ public class L_Units : MonoBehaviour {
     public float speed;
     public int waypoint;
 
+    //---------------PowerUps-----------------------
+    public bool isInvulnerable;
+    public PowerUps powerUps;
+
     public  Slider healthSlider;
     //private L_Friendship[] friendUnit;
    
@@ -38,10 +42,13 @@ public class L_Units : MonoBehaviour {
         maxHealth = health;
         targetWayPoint = WP.wayPoints[wayPointIndex];
         //healthSlider = GetComponent<Slider>();
-    }
-	
 
-	void Update ()
+        powerUps = GameObject.FindObjectOfType<PowerUps>();
+
+    }
+
+
+    void Update ()
 	{
         //unit.SetDestination(target.position);
         //FaceTarget();
@@ -51,7 +58,10 @@ public class L_Units : MonoBehaviour {
         {
             isDead = true;
             print("Unit died");
-	        Destroy(gameObject);
+
+            powerUps.Units.Remove(gameObject.GetComponent<L_Units>());
+            print("unit remove from list");
+            Destroy(gameObject);
 	    }
 	    Vector3 direction = targetWayPoint.position - transform.position;
 	    transform.Translate(direction.normalized * speed * Time.deltaTime);
@@ -88,6 +98,8 @@ public class L_Units : MonoBehaviour {
         {
             L_BuildManager.instance.AddScore(1);
             Debug.Log("ADD One Point");
+            powerUps.Units.Remove(gameObject.GetComponent<L_Units>());
+            print("unit remove from list");
             Destroy(this.gameObject);
         }
     }

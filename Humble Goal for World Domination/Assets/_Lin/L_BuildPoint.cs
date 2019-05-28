@@ -14,12 +14,18 @@ public class L_BuildPoint : MonoBehaviour {
     public Vector3 fixedPosition = new Vector3(0.5f,.25f,0.5f);
 
     public int waypointNum;
+
+    //-----------------PowerUps-----------------------------
+    public PowerUps powerUps;
+
     // Use this for initialization
     void Start ()
     {
         rend = GetComponent<Renderer>();
         startColor = rend.material.color;
         buildManager = L_BuildManager.instance;
+
+        powerUps = GameObject.FindObjectOfType<PowerUps>();
 
     }
 	
@@ -63,8 +69,8 @@ public class L_BuildPoint : MonoBehaviour {
 
         //Debug.Log("Turret build!");
 
-        
 
+        powerUps.Units.Add(turret.GetComponent<L_Units>());
 
 
 

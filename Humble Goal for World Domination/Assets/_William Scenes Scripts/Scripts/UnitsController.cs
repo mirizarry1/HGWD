@@ -16,17 +16,25 @@ public class UnitsController : MonoBehaviour
     public static int enemyHP;
 
     public WayPoints WP;
+    //public SpawnUnit SU;
+    public bool isInvulnerable;
 
-	// Use this for initialization
-	void Start ()
+
+    private void Awake()
+    {
+        //SU = GameObject.FindObjectOfType<SpawnUnit>();
+        //WP = SU.spawningPoint;
+    }
+    // Use this for initialization
+    void Start()
     {
         enemyHP = 50;
         targetWayPoint = WP.wayPoints[wayPointIndex];
         score = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
         if (health <= 0)
         {
@@ -44,9 +52,12 @@ public class UnitsController : MonoBehaviour
 
     private void GetNextWayPoint()
     {
-        if (wayPointIndex >= WP.wayPoints.Length -1)
+        if (wayPointIndex >= WP.wayPoints.Length - 1)
         {
             //targetTower.GetComponent<Tower>().health -= damage;
+
+            //GameObject.FindObjectOfType<PowerUps>().Units.Remove(gameObject.GetComponent<UnitsController>());
+
             Destroy(gameObject);
             enemyHP--;
             score.text = enemyHP.ToString();
@@ -57,6 +68,6 @@ public class UnitsController : MonoBehaviour
         targetWayPoint = WP.wayPoints[wayPointIndex];
     }
 
-   
-   
+
+
 }
