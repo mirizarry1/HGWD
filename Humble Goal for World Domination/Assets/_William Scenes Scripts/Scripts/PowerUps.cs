@@ -10,6 +10,7 @@ public class PowerUps : MonoBehaviour
     [SerializeField] private float speedUpMultiplier;
     [SerializeField] private float speedUpTime;
     [SerializeField] private float invulnerableTime;
+    [SerializeField] private float invulnerableMultiplier;
 
 
 
@@ -17,7 +18,12 @@ public class PowerUps : MonoBehaviour
     {
         foreach (var unit in Units)
         {
-            unit.speed *= speedUpMultiplier;
+            if (!unit.alreadySpeedUp)
+            {
+                unit.speed *= speedUpMultiplier;
+                unit.alreadySpeedUp = true;
+            }
+            
         }
 
         StartCoroutine("NormalSpeed");
@@ -29,7 +35,11 @@ public class PowerUps : MonoBehaviour
 
         foreach (var unit in Units)
         {
-            unit.speed /= speedUpMultiplier;
+            if (unit.alreadySpeedUp)
+            {
+                unit.speed /= speedUpMultiplier;
+                unit.alreadySpeedUp = false;
+            }
         }
     }
 
@@ -40,7 +50,7 @@ public class PowerUps : MonoBehaviour
         {
             unit.isInvulnerable = true;
 
-            unit.transform.localScale = new Vector3(50, 50, 50);
+            unit.transform.localScale = new Vector3(20 * invulnerableMultiplier, 20 * invulnerableMultiplier, 20 * invulnerableMultiplier);
         }
 
         StartCoroutine("Vulnerable");

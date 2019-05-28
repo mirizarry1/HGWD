@@ -24,6 +24,7 @@ public class L_Units : MonoBehaviour {
     //---------------PowerUps-----------------------
     public bool isInvulnerable;
     public PowerUps powerUps;
+    public bool alreadySpeedUp;
 
     public  Slider healthSlider;
     //private L_Friendship[] friendUnit;
