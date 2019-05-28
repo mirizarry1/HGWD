@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Biff/Level 1.unity
     guid: 707362046630f7f4ca5a7bb283b0adbe
+  - enabled: 1
+    path: Assets/_Biff/Level 2.unity
+    guid: 2d75fc0ef84ae6449968310e43d2e9e2
   m_configObjects: {}
