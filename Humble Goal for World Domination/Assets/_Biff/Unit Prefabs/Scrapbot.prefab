@@ -121,7 +121,7 @@ MonoBehaviour:
   targetWayPoint: {fileID: 0}
   wayPointIndex: 0
   WP: {fileID: 0}
-  speed: 7
+  speed: 5
   waypoint: 0
   isInvulnerable: 0
   powerUps: {fileID: 0}

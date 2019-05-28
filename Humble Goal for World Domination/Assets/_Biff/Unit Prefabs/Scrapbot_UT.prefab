@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114723985356711218}
   - component: {fileID: 114126474143334432}
   - component: {fileID: 136629384579844988}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Scrapbot_UT
   m_TagString: Untagged
   m_Icon: {fileID: 0}

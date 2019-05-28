@@ -54,7 +54,7 @@ public class DialogManager : MonoBehaviour {
     void scoreChecker()
     {
     
-        if (score.text == "40" && loopProtector == 0)
+        if (score.text == "10" && loopProtector == 0)
         {
             dQueue.Clear();
             dQueue.Enqueue("10 down!");
@@ -63,7 +63,7 @@ public class DialogManager : MonoBehaviour {
             dBox.SetActive(true);
             loopProtector++;
         }
-        if (score.text == "30" && loopProtector == 1)
+        if (score.text == "20" && loopProtector == 1)
         {
             dQueue.Clear();
             dQueue.Enqueue("20 down!");
@@ -73,7 +73,7 @@ public class DialogManager : MonoBehaviour {
             loopProtector++;
         }
 
-        if (score.text == "20" && loopProtector == 2)
+        if (score.text == "30" && loopProtector == 2)
         {
             dQueue.Clear();
             dQueue.Enqueue("20 left!");
@@ -83,7 +83,7 @@ public class DialogManager : MonoBehaviour {
             loopProtector++;
         }
 
-        if (score.text == "10" && loopProtector == 3)
+        if (score.text == "40" && loopProtector == 3)
         {
             dQueue.Clear();
             dQueue.Enqueue("10 to go!");

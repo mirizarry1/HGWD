@@ -44339,6 +44339,16 @@ Prefab:
       propertyPath: dText
       value: 
       objectReference: {fileID: 750957582}
+    - target: {fileID: 114326131784413998, guid: 7077be4fb0dd4a248b8ae6db90d2cff7,
+        type: 2}
+      propertyPath: maxtime
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 114561544647312932, guid: 7077be4fb0dd4a248b8ae6db90d2cff7,
+        type: 2}
+      propertyPath: totalMoney
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7077be4fb0dd4a248b8ae6db90d2cff7, type: 2}
   m_IsPrefabAsset: 0

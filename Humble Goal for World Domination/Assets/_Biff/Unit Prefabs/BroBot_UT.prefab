@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114890662094899644}
   - component: {fileID: 114556410795606136}
   - component: {fileID: 136684595226177222}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BroBot_UT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
