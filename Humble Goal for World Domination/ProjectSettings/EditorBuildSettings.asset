@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/_BK Scenes_Scripts_Prefabs/Scenes/Level Select.unity
     guid: 221524776d2d2ed40a7029340b109b15
   - enabled: 1
-    path: Assets/_William Scenes Scripts/Tower.unity
-    guid: bab2167069a1f344390e31813d821c24
-  - enabled: 1
-    path: Assets/_Lin/L_Test.unity
-    guid: 3b5df67b8e412924a8af7fc300475a3d
+    path: Assets/_BK Scenes_Scripts_Prefabs/Scenes/BK_Test 1.unity
+    guid: 6fbdefa405feb00459c02d85d00c86e6
   m_configObjects: {}

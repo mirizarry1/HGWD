@@ -11,8 +11,12 @@ public class L_Tower : MonoBehaviour {
     [SerializeField] private Transform firePos;
     [SerializeField] private GameObject projectile;
     GameObject bullet;
-    void Start () {
-		
+    enum UnitType { IonCanon,LaserTurret};
+    [SerializeField] private UnitType typeOfTower;
+    [SerializeField] private bk_AudioManager audioManager;
+    void Start ()
+    {
+        audioManager = GameObject.FindObjectOfType<bk_AudioManager>();
 	}
 	
 	// Update is called once per frame
@@ -20,10 +24,20 @@ public class L_Tower : MonoBehaviour {
         
 	    if (targetUnit != null && timeSinceLastFire > coolDowntime)
 	    {
-	        //GameObject bullet = Instantiate(projectile, firePos.position, Quaternion.identity);
-	        //bullet.GetComponent<Rigidbody>().velocity = (targetUnit.position - bullet.transform.position) * fireSpeed;
+            //GameObject bullet = Instantiate(projectile, firePos.position, Quaternion.identity);
+            //bullet.GetComponent<Rigidbody>().velocity = (targetUnit.position - bullet.transform.position) * fireSpeed;
+            switch (typeOfTower)
+            {
+                case UnitType.IonCanon:
+                    audioManager.audioSourceComponents[2].Play();
+                    break;
 
-	        bullet = Instantiate(projectile, firePos.position, Quaternion.identity);
+                case UnitType.LaserTurret:
+                    audioManager.audioSourceComponents[4].Play();
+                    break;
+
+            }
+            bullet = Instantiate(projectile, firePos.position, Quaternion.identity);
 	        timeSinceLastFire = 0;
 	    }
 	    if (bullet)

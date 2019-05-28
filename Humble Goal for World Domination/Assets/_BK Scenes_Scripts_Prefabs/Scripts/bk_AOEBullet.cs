@@ -8,6 +8,8 @@ public class bk_AOEBullet : MonoBehaviour
     [SerializeField] float explosionForce; // force put behind the explosion that only affects the enemies
     [SerializeField] LayerMask effectedLayers; // a variable to set what layers are affected by the explosion should be a layer called enemy
     [SerializeField] float damage;
+    [SerializeField] float lifeExpectancy;
+    private float timer;
     // Use this for initialization
     //void OnCollisionEnter(Collision col)  // upon the fireball colliding with an object the particle effect goes off and the particle effect and fireball are destroyed
     //{
@@ -44,6 +46,14 @@ public class bk_AOEBullet : MonoBehaviour
                 hit.gameObject.GetComponent<L_Units>().health-=damage;
                 //hit.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, centerOfExplosion, explosionRadius, 0, ForceMode.Impulse); // ads a force to each collider
             }
+        }
+    }
+    void Update()
+    {
+        timer += Time.deltaTime;
+        if(timer>=lifeExpectancy)
+        {
+            Destroy(gameObject);
         }
     }
 }

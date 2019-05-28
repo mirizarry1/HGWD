@@ -4281,6 +4281,8 @@ MonoBehaviour:
   fireSpeed: 50
   firePos: {fileID: 1108089168}
   projectile: {fileID: 1287659799844238, guid: 4c0759df674624f42b5e30ad712a5517, type: 2}
+  typeOfTower: 1
+  audioManager: {fileID: 0}
 --- !u!54 &121817294
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18613,6 +18615,8 @@ MonoBehaviour:
   fireSpeed: 50
   firePos: {fileID: 1376887544}
   projectile: {fileID: 1287659799844238, guid: 4c0759df674624f42b5e30ad712a5517, type: 2}
+  typeOfTower: 0
+  audioManager: {fileID: 0}
 --- !u!54 &466841338
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -29738,6 +29742,8 @@ MonoBehaviour:
   fireSpeed: 50
   firePos: {fileID: 1721229857}
   projectile: {fileID: 1287659799844238, guid: 4c0759df674624f42b5e30ad712a5517, type: 2}
+  typeOfTower: 0
+  audioManager: {fileID: 0}
 --- !u!54 &1046444682
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32844,6 +32850,8 @@ MonoBehaviour:
   fireSpeed: 10
   firePos: {fileID: 1844809415}
   projectile: {fileID: 1287659799844238, guid: 2b724a927ae52da458ca28f540e137e1, type: 2}
+  typeOfTower: 1
+  audioManager: {fileID: 0}
 --- !u!54 &1216388700
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36638,6 +36646,8 @@ MonoBehaviour:
   fireSpeed: 50
   firePos: {fileID: 1478218959}
   projectile: {fileID: 1287659799844238, guid: 4c0759df674624f42b5e30ad712a5517, type: 2}
+  typeOfTower: 0
+  audioManager: {fileID: 0}
 --- !u!54 &1488956911
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37145,6 +37155,8 @@ MonoBehaviour:
   fireSpeed: 10
   firePos: {fileID: 1438322670}
   projectile: {fileID: 1287659799844238, guid: 2b724a927ae52da458ca28f540e137e1, type: 2}
+  typeOfTower: 0
+  audioManager: {fileID: 0}
 --- !u!54 &1523165707
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47088,6 +47100,8 @@ MonoBehaviour:
   fireSpeed: 50
   firePos: {fileID: 2061173206}
   projectile: {fileID: 1287659799844238, guid: 4c0759df674624f42b5e30ad712a5517, type: 2}
+  typeOfTower: 1
+  audioManager: {fileID: 0}
 --- !u!54 &1808698072
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -50224,6 +50238,8 @@ MonoBehaviour:
   fireSpeed: 50
   firePos: {fileID: 1786247990}
   projectile: {fileID: 1287659799844238, guid: 4c0759df674624f42b5e30ad712a5517, type: 2}
+  typeOfTower: 0
+  audioManager: {fileID: 0}
 --- !u!54 &1970297999
 Rigidbody:
   m_ObjectHideFlags: 0
