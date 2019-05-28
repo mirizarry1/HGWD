@@ -30,6 +30,7 @@ public class bk_SceneTransition : MonoBehaviour {
                 SceneManager.LoadScene(2);
                 break;
             case 3:
+                Debug.Log("Level 2 has been clicked");
                 SceneManager.LoadScene(3);
                 break;
 
