@@ -1165,6 +1165,7 @@ MonoBehaviour:
   soundPlayer: {fileID: 0}
   listOfThemes:
   - {fileID: 8300000, guid: 7dc12f3220200674792591617f23bfa4, type: 3}
+  - {fileID: 8300000, guid: 64f6873864765ba4b9ef1e654cf2607f, type: 3}
   listOfSoundeffects:
   - {fileID: 8300000, guid: 4798fc2aa0525b24594fdc231707ca29, type: 3}
   - {fileID: 8300000, guid: 2c7dd904d00a9ba478968999eef4b738, type: 3}
