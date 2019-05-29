@@ -39,6 +39,7 @@ public class L_BuildManager : MonoBehaviour
     void Start ()
     {
         targeTransform = GameObject.FindGameObjectWithTag("Target").transform;
+        Debug.Log("This is the game object with L_Build Manager" + this.gameObject.name);
     }
  
 
