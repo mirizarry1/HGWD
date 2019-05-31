@@ -85,9 +85,19 @@ public class bk_SceneTransition : MonoBehaviour {
         leaderBoard.SetActive(true);
     }
 
+    public void CloseLeaderBoard()
+    {
+        leaderBoard.SetActive(false);
+    }
+
     public void OpenOption()
     {
         option.SetActive(true);
+    }
+
+    public void CloseOption()
+    {
+        option.SetActive(false);
     }
 
     public void exitGame()

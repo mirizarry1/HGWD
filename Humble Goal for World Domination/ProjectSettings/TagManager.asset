@@ -9,6 +9,7 @@ TagManager:
   - Target
   - SpawnPoint
   - LevelButton
+  - Canvas
   layers:
   - Default
   - TransparentFX
