@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1734209252121264}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -2.9417431, y: 1, z: 155.97371}
+  m_LocalPosition: {x: -7.17, y: 1, z: 170.32}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4532571048454810}
@@ -126,8 +126,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.4486306, y: 1.2223718, z: 4.9749203}
-  m_Center: {x: -0.036432266, y: 0.6111859, z: 0.19539213}
+  m_Size: {x: 3.091215, y: 1.2223718, z: 1.9564182}
+  m_Center: {x: 1.0017657, y: 0.6111859, z: 0.3361507}
 --- !u!114 &114605940969206846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -141,10 +141,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetUnit: {fileID: 0}
   timeSinceLastFire: 0
-  coolDowntime: 2
-  fireSpeed: 40
+  coolDowntime: 1
+  fireSpeed: 50
   firePos: {fileID: 4395518390420094}
-  projectile: {fileID: 1202465958934410, guid: c90671e5175dfff4fa9d0827eec54c53, type: 2}
+  projectile: {fileID: 1898148828249574, guid: da1bfbfc67d384a409b69a359f62d6df, type: 2}
   typeOfTower: 1
   audioManager: {fileID: 0}
   firesparkEffect: {fileID: 0}

@@ -599,7 +599,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4879965913420350}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4638846637167994
 Transform:
@@ -680,7 +680,7 @@ Transform:
   m_Children:
   - {fileID: 4774636286120688}
   m_Father: {fileID: 4879965913420350}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4879965913420350
 Transform:
@@ -692,8 +692,8 @@ Transform:
   m_LocalPosition: {x: 1.078, y: 1.034, z: 159.101}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4858466971039516}
   - {fileID: 4632837893565756}
+  - {fileID: 4858466971039516}
   - {fileID: 4775983312954648}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -782,7 +782,7 @@ MonoBehaviour:
   coolDowntime: 0.5
   fireSpeed: 40
   firePos: {fileID: 4879965913420350}
-  projectile: {fileID: 1287659799844238, guid: 2b724a927ae52da458ca28f540e137e1, type: 2}
+  projectile: {fileID: 1202465958934410, guid: c90671e5175dfff4fa9d0827eec54c53, type: 2}
   typeOfTower: 0
   audioManager: {fileID: 0}
   firesparkEffect: {fileID: 0}

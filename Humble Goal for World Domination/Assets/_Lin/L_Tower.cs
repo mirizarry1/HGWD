@@ -42,19 +42,19 @@ public class L_Tower : MonoBehaviour {
         
 	    if (targetUnit != null && timeSinceLastFire > coolDowntime)
 	    {
-            GameObject bullet = Instantiate(projectile, firePos.position, Quaternion.identity);
-            bullet.GetComponent<Rigidbody>().velocity = (targetUnit.position - bullet.transform.position) * fireSpeed;
-            switch (typeOfTower)
-            {
-                case UnitType.IonCanon:
-                    audioManager.audioSourceComponents[2].Play();
-                    break;
+            //GameObject bullet = Instantiate(projectile, firePos.position, Quaternion.identity);
+           // bullet.GetComponent<Rigidbody>().velocity = (targetUnit.position - bullet.transform.position) * fireSpeed;
+            //switch (typeOfTower)
+            //{
+            //    case UnitType.IonCanon:
+            //        audioManager.audioSourceComponents[2].Play();
+            //        break;
 
-                case UnitType.LaserTurret:
-                    audioManager.audioSourceComponents[4].Play();
-                    break;
+            //    case UnitType.LaserTurret:
+            //        audioManager.audioSourceComponents[4].Play();
+            //        break;
 
-            }
+            //}
             bullet = Instantiate(projectile, firePos.position, Quaternion.identity);
             firesparkEffect.Play();
             timeSinceLastFire = 0;
