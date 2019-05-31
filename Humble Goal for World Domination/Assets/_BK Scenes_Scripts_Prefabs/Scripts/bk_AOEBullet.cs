@@ -9,6 +9,8 @@ public class bk_AOEBullet : MonoBehaviour
     [SerializeField] LayerMask effectedLayers; // a variable to set what layers are affected by the explosion should be a layer called enemy
     [SerializeField] float damage;
     [SerializeField] float lifeExpectancy;
+    [SerializeField] private ParticleSystem standardHit;
+    [SerializeField] private ParticleSystem theBulletItself;
     private float timer;
     // Use this for initialization
     //void OnCollisionEnter(Collision col)  // upon the fireball colliding with an object the particle effect goes off and the particle effect and fireball are destroyed
@@ -28,9 +30,11 @@ public class bk_AOEBullet : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             //other.gameObject.GetComponent<L_Units>().health -= damage;
-            AddExplosiveForce(other.transform.position);
-            print("AOE hit the player");
-            Destroy(gameObject);
+            //AddExplosiveForce(other.transform.position);
+            //print("AOE hit the player");
+            //Destroy(gameObject);
+            theBulletItself.Stop();
+            StartCoroutine(doDamageandParticleeffects(other));
         }
     }
     void AddExplosiveForce(Vector3 centerOfExplosion)
@@ -55,5 +59,18 @@ public class bk_AOEBullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    IEnumerator doDamageandParticleeffects(Collider other)
+    {
+        other.gameObject.GetComponent<L_Units>().health -= damage;
+        print("I hit the player");
+        AddExplosiveForce(other.transform.position);
+        //Destroy(particleshot);
+        //theBulletItself.Stop();
+        standardHit.Play();
+        yield return new WaitForSeconds(.5f);
+        Destroy(gameObject);
+        yield return null;
     }
 }

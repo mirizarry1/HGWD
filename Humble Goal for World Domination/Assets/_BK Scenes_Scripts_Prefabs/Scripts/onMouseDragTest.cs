@@ -61,7 +61,7 @@ public class onMouseDragTest : MonoBehaviour {
                     case "Spawner":
                         bk_BuildLog.instance.SelectRobotUnit(unitToSpawn);
                         contactPoint.transform.gameObject.GetComponent<bk_setUnitForSpawner>().spawnpointUnitType = bk_BuildLog.instance.soliderUnits[unitToSpawn];
-
+                        contactPoint.transform.gameObject.GetComponent<bk_materialChanger>().setIndicator(unitToSpawn);
                         buttonBehavior.instance.isSpawnReady = true;
                         Destroy(this.gameObject);
 

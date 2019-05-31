@@ -24,7 +24,10 @@ public class L_BuildPoint : MonoBehaviour {
         rend = GetComponent<Renderer>();
         //startColor = rend.material.color;
         buildManager = L_BuildManager.instance;
-
+        // rend.material.color = Color.red;
+       // rend.material.shader = Shader.Find("_Color");
+        //rend.material.SetColor("_Color", Color.green);
+        
         powerUps = GameObject.FindObjectOfType<PowerUps>();
 
     }

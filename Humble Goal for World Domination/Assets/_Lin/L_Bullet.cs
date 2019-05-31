@@ -6,8 +6,15 @@ public class L_Bullet : MonoBehaviour {
 
     [SerializeField] private float damage;
     [SerializeField] private float destroyTime;
+    [SerializeField] private ParticleSystem standardHit;
+    [SerializeField] private ParticleSystem theBulletItself;
     private float timer;
-    
+
+    private void Awake()
+    {
+        standardHit.Stop();
+    }
+
     void Update()
     {
         timer += Time.deltaTime;
@@ -32,9 +39,27 @@ public class L_Bullet : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<L_Units>().health -= damage;
-            print("I hit the player");
-            Destroy(gameObject);
+            //other.gameObject.GetComponent<L_Units>().health -= damage;
+            //print("I hit the player");
+
+            ////Destroy(particleshot);
+            //standardHit.Play();
+            //Destroy(gameObject);
+            theBulletItself.Stop();
+            StartCoroutine(doDamageandParticleeffects(other));
         }
+    }
+
+    IEnumerator doDamageandParticleeffects(Collider other)
+    {
+        other.gameObject.GetComponent<L_Units>().health -= damage;
+        print("I hit the player");
+
+        //Destroy(particleshot);
+        //theBulletItself.Stop();
+        standardHit.Play();
+        yield return new WaitForSeconds(.5f);
+        Destroy(gameObject);
+        yield return null;
     }
 }

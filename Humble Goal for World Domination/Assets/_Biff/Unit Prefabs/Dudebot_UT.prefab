@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 136978377141674198}
   - component: {fileID: 54196527718215044}
   m_Layer: 11
-  m_Name: Dudebot
+  m_Name: Dudebot_UT
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -30,7 +30,12 @@ public class L_Units : MonoBehaviour {
 
     public bool inDudebut = false;
     //private L_Friendship[] friendUnit;
-   
+    [SerializeField] private ParticleSystem IDiagnoseYouWithDeath;
+    public bool dying = false;
+    private void Awake()
+    {
+        IDiagnoseYouWithDeath.Stop();
+    }
     void Start ()
     {
         Physics.IgnoreLayerCollision(11, 11);
@@ -50,6 +55,14 @@ public class L_Units : MonoBehaviour {
 
     }
 
+    IEnumerator doDamageandParticleeffects()
+    {
+        dying = true;
+        IDiagnoseYouWithDeath.Play();
+        yield return new WaitForSeconds(1f);
+        Destroy(gameObject);
+        yield return null;
+    }
 
     void Update ()
 	{
@@ -61,14 +74,20 @@ public class L_Units : MonoBehaviour {
         {
             isDead = true;
             print("Unit died");
-
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
             powerUps.Units.Remove(gameObject.GetComponent<L_Units>());
             print("unit remove from list");
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            if (dying == false)
+            {
+                StartCoroutine(doDamageandParticleeffects());
+            }
 	    }
 	    Vector3 direction = targetWayPoint.position - transform.position;
-	    transform.Translate(direction.normalized * speed * Time.deltaTime);
-
+        if (health > 0)
+        {
+            transform.Translate(direction.normalized * speed * Time.deltaTime);
+        }
 	    if (Vector3.Distance(transform.position, targetWayPoint.position) < 0.2f)
 	    {
 	        GetNextWayPoint();
