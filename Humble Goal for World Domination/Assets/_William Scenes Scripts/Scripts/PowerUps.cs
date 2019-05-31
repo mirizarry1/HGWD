@@ -14,7 +14,8 @@ public class PowerUps : MonoBehaviour
 
     //------------Upgrade--------------------------------
     private L_BuildManager buildManager;
-
+    public float speedTime;
+    public float invTime;
     public enum UpgradeState
     {
         first = 0,
@@ -36,8 +37,17 @@ public class PowerUps : MonoBehaviour
         {
             if (!unit.alreadySpeedUp)
             {
-                unit.speed *= speedUpMultiplier;
-                unit.alreadySpeedUp = true;
+                if (unit.inDudebut == true)
+                {
+                    unit.speed *= 2*speedUpMultiplier;
+                    unit.alreadySpeedUp = true;
+                }
+                else
+                {
+                    unit.speed *= speedUpMultiplier;
+                    unit.alreadySpeedUp = true;
+                }
+                
             }
         }
 
@@ -46,7 +56,13 @@ public class PowerUps : MonoBehaviour
 
     IEnumerator NormalSpeed()
     {
-        yield return new WaitForSeconds(speedUpTime);
+        speedTime = 0f;
+        //yield return new WaitForSeconds(speedUpTime);
+        while (speedTime<speedUpTime)
+        {
+            speedTime += Time.deltaTime;
+            yield return null;
+        }
 
         foreach (var unit in Units)
         {
@@ -56,6 +72,7 @@ public class PowerUps : MonoBehaviour
                 unit.alreadySpeedUp = false;
             }
         }
+
     }
 
     public void Invulnerable()
@@ -73,8 +90,14 @@ public class PowerUps : MonoBehaviour
 
     IEnumerator Vulnerable()
     {
-        yield return new WaitForSeconds(invulnerableTime);
-
+        //yield return new WaitForSeconds(invulnerableTime);
+        speedTime = 0f;
+        //yield return new WaitForSeconds(speedUpTime);
+        while (invTime < invulnerableTime)
+        {
+            invTime += Time.deltaTime;
+            yield return null;
+        }
         foreach (var unit in Units)
         {
             unit.isInvulnerable = false;

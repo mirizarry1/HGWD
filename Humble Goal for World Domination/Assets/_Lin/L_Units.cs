@@ -27,6 +27,8 @@ public class L_Units : MonoBehaviour {
     public bool alreadySpeedUp;
 
     public  Slider healthSlider;
+
+    public bool inDudebut = false;
     //private L_Friendship[] friendUnit;
    
     void Start ()
