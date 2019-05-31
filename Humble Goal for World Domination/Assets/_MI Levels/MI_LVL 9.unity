@@ -2275,6 +2275,26 @@ Prefab:
       propertyPath: m_Name
       value: Basic Tower (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 3.8109345
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 0.6419058
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 3.9174166
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Center.z
+      value: -0.64434886
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b66166782e4bb5641b0d80d2e3ca2646, type: 2}
   m_IsPrefabAsset: 0
@@ -5635,6 +5655,26 @@ Prefab:
     - target: {fileID: 1734209252121264, guid: b66166782e4bb5641b0d80d2e3ca2646, type: 2}
       propertyPath: m_Name
       value: Basic Tower (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 6.034803
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 1.7293038
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 3.0798762
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Center.z
+      value: -0.22557849
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b66166782e4bb5641b0d80d2e3ca2646, type: 2}
@@ -12284,7 +12324,7 @@ Prefab:
     - target: {fileID: 224938820268206046, guid: b8400d27fda19b54d9a92d61385c87b3,
         type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 224938820268206046, guid: b8400d27fda19b54d9a92d61385c87b3,
         type: 2}
@@ -12324,7 +12364,7 @@ Prefab:
     - target: {fileID: 224938820268206046, guid: b8400d27fda19b54d9a92d61385c87b3,
         type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 224938820268206046, guid: b8400d27fda19b54d9a92d61385c87b3,
         type: 2}
@@ -16425,6 +16465,36 @@ Prefab:
     - target: {fileID: 1734209252121264, guid: b66166782e4bb5641b0d80d2e3ca2646, type: 2}
       propertyPath: m_Name
       value: Basic Tower (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 3.4548292
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0.4745897
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 3.7439342
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 0.675406
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1.2596364
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0.6298182
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b66166782e4bb5641b0d80d2e3ca2646, type: 2}
@@ -22446,6 +22516,26 @@ Prefab:
       propertyPath: m_Name
       value: Basic Tower (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 3.2206185
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.2074377
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 4.9655457
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 1.8407149
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b66166782e4bb5641b0d80d2e3ca2646, type: 2}
   m_IsPrefabAsset: 0
@@ -27715,6 +27805,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 3.7553785
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 0.6696838
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 5.9092956
+      objectReference: {fileID: 0}
+    - target: {fileID: 65572305179312144, guid: b66166782e4bb5641b0d80d2e3ca2646,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0.7155446
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b66166782e4bb5641b0d80d2e3ca2646, type: 2}
   m_IsPrefabAsset: 0
@@ -27923,7 +28033,7 @@ Prefab:
     - target: {fileID: 224199995955866734, guid: 7aa6289b818cf1241abbf42187783e25,
         type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 224199995955866734, guid: 7aa6289b818cf1241abbf42187783e25,
         type: 2}
@@ -27963,7 +28073,7 @@ Prefab:
     - target: {fileID: 224199995955866734, guid: 7aa6289b818cf1241abbf42187783e25,
         type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 224199995955866734, guid: 7aa6289b818cf1241abbf42187783e25,
         type: 2}
@@ -32214,7 +32324,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1670717195
 Prefab:

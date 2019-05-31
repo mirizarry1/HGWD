@@ -779,7 +779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetUnit: {fileID: 0}
   timeSinceLastFire: 0
-  coolDowntime: 0.5
+  coolDowntime: 1.5
   fireSpeed: 40
   firePos: {fileID: 4879965913420350}
   projectile: {fileID: 1202465958934410, guid: c90671e5175dfff4fa9d0827eec54c53, type: 2}

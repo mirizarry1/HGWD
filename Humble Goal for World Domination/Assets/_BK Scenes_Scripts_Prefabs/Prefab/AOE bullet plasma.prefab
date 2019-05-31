@@ -410,7 +410,7 @@ MonoBehaviour:
   effectedLayers:
     serializedVersion: 2
     m_Bits: 2048
-  damage: 3
+  damage: 1.5
   lifeExpectancy: 2
   standardHit: {fileID: 198066551816619466}
   theBulletItself: {fileID: 198645106946761594}

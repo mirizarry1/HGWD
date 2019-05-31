@@ -1098,6 +1098,11 @@ Prefab:
       propertyPath: m_Name
       value: AoE Tower (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114004983000499894, guid: 1091db86cee149b45a4cf2c063581780,
+        type: 2}
+      propertyPath: coolDowntime
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1091db86cee149b45a4cf2c063581780, type: 2}
   m_IsPrefabAsset: 0
@@ -5150,6 +5155,11 @@ Prefab:
       propertyPath: spawnpointForDrag
       value: 
       objectReference: {fileID: 1693935425}
+    - target: {fileID: 114590548928986616, guid: 7aa6289b818cf1241abbf42187783e25,
+        type: 2}
+      propertyPath: soliderUnits.Array.data[1].cost
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7aa6289b818cf1241abbf42187783e25, type: 2}
   m_IsPrefabAsset: 0
@@ -9877,6 +9887,10 @@ Prefab:
         type: 2}
       propertyPath: m_Size.z
       value: 1.976794
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734209252121264, guid: b66166782e4bb5641b0d80d2e3ca2646, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b66166782e4bb5641b0d80d2e3ca2646, type: 2}
@@ -16926,7 +16940,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-13548016
+  m_Name: pb_Mesh-373700
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -18834,7 +18848,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-619866
+  m_Name: pb_Mesh-375908
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -19029,7 +19043,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-619152
+  m_Name: pb_Mesh-374290
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -34336,6 +34350,10 @@ Prefab:
       propertyPath: m_Center.z
       value: 0.6796234
       objectReference: {fileID: 0}
+    - target: {fileID: 1734209252121264, guid: b66166782e4bb5641b0d80d2e3ca2646, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b66166782e4bb5641b0d80d2e3ca2646, type: 2}
   m_IsPrefabAsset: 0
@@ -36158,7 +36176,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-619754
+  m_Name: pb_Mesh-375738
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -45955,6 +45973,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1709476459277556, guid: 1091db86cee149b45a4cf2c063581780, type: 2}
       propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114004983000499894, guid: 1091db86cee149b45a4cf2c063581780,
+        type: 2}
+      propertyPath: coolDowntime
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
