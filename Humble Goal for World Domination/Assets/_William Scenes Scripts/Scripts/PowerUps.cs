@@ -24,11 +24,18 @@ public class PowerUps : MonoBehaviour
         fourth,
     }
     public UpgradeState upgradeState;
+    [SerializeField] private int firstUpgradeMoney;
+    [SerializeField] private int secondUpgradeMoney;
+    [SerializeField] private int thirdUpgradeMoney;
+    [SerializeField] private int fourthUpgradeMoney;
+    [SerializeField] private float HpUpgrade;
+    [SerializeField] private float speedUpgrade;
 
+
+    // This is for initialization
     private void Start()
     {
         buildManager = L_BuildManager.instance;
-
     }
 
     public void MovementSpeedUp()
@@ -77,7 +84,6 @@ public class PowerUps : MonoBehaviour
 
     public void Invulnerable()
     {
-        print("invulnerable");
         foreach (var unit in Units)
         {
             unit.isInvulnerable = true;
@@ -108,23 +114,25 @@ public class PowerUps : MonoBehaviour
 
     public void Upgrade()
     {
-        print("Upgrade");
         switch (upgradeState)
         {
             case UpgradeState.first:
 
-                if (buildManager.totalMoney < 5)
+                if (buildManager.totalMoney < firstUpgradeMoney)
                 {
                     Debug.Log("Not enough money to build that!");
                     return;
                 }
 
-                buildManager.totalMoney -= 5;
+                buildManager.totalMoney -= firstUpgradeMoney;
+
+                L_Units.powerUpHP += HpUpgrade;
+                L_Units.powerUpSpeed += speedUpgrade;
 
                 foreach (var unit in Units)
                 {
-                    unit.health += 2;
-                    unit.speed += 0.5f;
+                    unit.health += HpUpgrade;
+                    unit.speed += speedUpgrade;
                 }
 
                 upgradeState = UpgradeState.second;
@@ -132,17 +140,21 @@ public class PowerUps : MonoBehaviour
                 break;
             case UpgradeState.second:
 
-                if (buildManager.totalMoney < 25)
+                if (buildManager.totalMoney < secondUpgradeMoney)
                 {
                     Debug.Log("Not enough money to build that!");
                     return;
                 }
 
-                buildManager.totalMoney -= 25;
+                buildManager.totalMoney -= secondUpgradeMoney;
+
+                L_Units.powerUpHP += HpUpgrade;
+                L_Units.powerUpSpeed += speedUpgrade;
+
                 foreach (var unit in Units)
                 {
-                    unit.health += 2;
-                    unit.speed += 0.5f;
+                    unit.health += HpUpgrade;
+                    unit.speed += speedUpgrade;
                 }
 
                 upgradeState = UpgradeState.third;
@@ -150,17 +162,21 @@ public class PowerUps : MonoBehaviour
                 break;
             case UpgradeState.third:
 
-                if (buildManager.totalMoney < 125)
+                if (buildManager.totalMoney < thirdUpgradeMoney)
                 {
                     Debug.Log("Not enough money to build that!");
                     return;
                 }
 
-                buildManager.totalMoney -= 125;
+                buildManager.totalMoney -= thirdUpgradeMoney;
+
+                L_Units.powerUpHP += HpUpgrade;
+                L_Units.powerUpSpeed += speedUpgrade;
+
                 foreach (var unit in Units)
                 {
-                    unit.health += 2;
-                    unit.speed += 0.5f;
+                    unit.health += HpUpgrade;
+                    unit.speed += speedUpgrade;
                 }
 
                 upgradeState = UpgradeState.fourth;
@@ -168,21 +184,23 @@ public class PowerUps : MonoBehaviour
                 break;
             case UpgradeState.fourth:
 
-                if (buildManager.totalMoney < 625)
+                if (buildManager.totalMoney < fourthUpgradeMoney)
                 {
                     Debug.Log("Not enough money to build that!");
                     return;
                 }
 
-                buildManager.totalMoney -= 625;
+                buildManager.totalMoney -= fourthUpgradeMoney;
+
+                L_Units.powerUpHP += HpUpgrade;
+                L_Units.powerUpSpeed += speedUpgrade;
+
                 foreach (var unit in Units)
                 {
-                    unit.health += 2;
-                    unit.speed += 0.5f;
+                    unit.health += HpUpgrade;
+                    unit.speed += speedUpgrade;
                 }
 
-                break;
-            default:
                 break;
         }
         

@@ -26,6 +26,11 @@ public class L_Units : MonoBehaviour {
     public PowerUps powerUps;
     public bool alreadySpeedUp;
 
+    //******************************************
+    public static float powerUpHP;
+    public static float powerUpSpeed;
+    //******************************************
+
     public  Slider healthSlider;
 
     public bool inDudebut = false;
@@ -39,6 +44,12 @@ public class L_Units : MonoBehaviour {
     void Start ()
     {
         Physics.IgnoreLayerCollision(11, 11);
+
+        //******************************
+        health += powerUpHP;
+        speed += powerUpHP;
+        //******************************
+
         switch (typeOfUnit)
         {
             case UnitType.Scrapbot:

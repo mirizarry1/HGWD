@@ -6613,7 +6613,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh654420
+  m_Name: pb_Mesh-638164
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -12911,6 +12911,27 @@ Mesh:
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimized: 0
+--- !u!1 &840834356 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1702651558601518, guid: ff3021682a664a04b864f9fc7e170ad4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1156102556}
+--- !u!114 &840834364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840834356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bef99c60c6188c46aa9f7d86d22d470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listofButtonImages:
+  - {fileID: 1381334350}
+  - {fileID: 1790320219}
+  - {fileID: 1236331322}
+  - {fileID: 1224521283}
 --- !u!43 &844780458
 Mesh:
   m_ObjectHideFlags: 0
@@ -15684,6 +15705,36 @@ Prefab:
         type: 2}
       propertyPath: maxtime
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 114495935004666356, guid: 7077be4fb0dd4a248b8ae6db90d2cff7,
+        type: 2}
+      propertyPath: firstUpgradeMoney
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114495935004666356, guid: 7077be4fb0dd4a248b8ae6db90d2cff7,
+        type: 2}
+      propertyPath: secondUpgradeMoney
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114495935004666356, guid: 7077be4fb0dd4a248b8ae6db90d2cff7,
+        type: 2}
+      propertyPath: thirdUpgradeMoney
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 114495935004666356, guid: 7077be4fb0dd4a248b8ae6db90d2cff7,
+        type: 2}
+      propertyPath: fourthUpgradeMoney
+      value: 625
+      objectReference: {fileID: 0}
+    - target: {fileID: 114495935004666356, guid: 7077be4fb0dd4a248b8ae6db90d2cff7,
+        type: 2}
+      propertyPath: HpUpgrade
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114495935004666356, guid: 7077be4fb0dd4a248b8ae6db90d2cff7,
+        type: 2}
+      propertyPath: speedUpgrade
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7077be4fb0dd4a248b8ae6db90d2cff7, type: 2}
@@ -19247,6 +19298,22 @@ MonoBehaviour:
   fixedPosition: {x: 0.5, y: 0.25, z: 0.5}
   waypointNum: 0
   powerUps: {fileID: 0}
+--- !u!114 &1163344979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1163344971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bef99c60c6188c46aa9f7d86d22d470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listofButtonImages:
+  - {fileID: 1381334350}
+  - {fileID: 1790320219}
+  - {fileID: 1236331322}
+  - {fileID: 1224521283}
 --- !u!1001 &1177519213
 Prefab:
   m_ObjectHideFlags: 0
@@ -20958,12 +21025,18 @@ Mesh:
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimized: 0
+--- !u!114 &1224521283 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114588476878529670, guid: 7aa6289b818cf1241abbf42187783e25,
+    type: 2}
+  m_PrefabInternal: {fileID: 1722611995}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!43 &1232405027
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh654536
+  m_Name: pb_Mesh116162
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -21796,6 +21869,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4784930423412702, guid: ff3021682a664a04b864f9fc7e170ad4,
     type: 2}
   m_PrefabInternal: {fileID: 1234430051}
+--- !u!114 &1236331322 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114098558280969038, guid: 7aa6289b818cf1241abbf42187783e25,
+    type: 2}
+  m_PrefabInternal: {fileID: 1722611995}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!43 &1239066898
 Mesh:
   m_ObjectHideFlags: 0
@@ -25215,6 +25294,12 @@ Mesh:
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimized: 0
+--- !u!114 &1381334350 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114633445757232720, guid: 7aa6289b818cf1241abbf42187783e25,
+    type: 2}
+  m_PrefabInternal: {fileID: 1722611995}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1408954573
 GameObject:
   m_ObjectHideFlags: 0
@@ -31058,6 +31143,12 @@ Mesh:
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimized: 0
+--- !u!114 &1790320219 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114535250112216948, guid: 7aa6289b818cf1241abbf42187783e25,
+    type: 2}
+  m_PrefabInternal: {fileID: 1722611995}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1797430187
 Prefab:
   m_ObjectHideFlags: 0
