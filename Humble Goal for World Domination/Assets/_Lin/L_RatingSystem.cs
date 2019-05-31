@@ -10,7 +10,7 @@ public class L_RatingSystem : MonoBehaviour
 {
 
     private int rating;
-    private float fixedTime;
+    [SerializeField] private float fixedTime;
     private L_GameLose GL;
     public Animator oneStar;
     public Animator twoStar;
@@ -29,6 +29,12 @@ public class L_RatingSystem : MonoBehaviour
         //Time.timeScale = 0;
         //fixedTime = GL.maxtime / GL.totalTime;
         fixedTime = GL.totalTime / GL.maxtime;
+        //**************leaderboard**********************
+        float min = GL.totalTime / 60;
+        float sec = GL.totalTime % 60;
+        string bestTime = (int)min + " : "+ (int)sec;
+        PlayerPrefs.SetString("LeaderBoard" + currentLevel, bestTime);
+        //************************************
         CheckRating();
         if (currentLevel > PlayerPrefs.GetInt("CurrentUnlock", 0))
         {

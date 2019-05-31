@@ -5,14 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class bk_SceneTransition : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public GameObject leaderBoard;
+    public GameObject option;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            PlayerPrefs.DeleteAll();
+        }
 	}
 
     public void changeScene(int sceneIndex)
@@ -71,6 +78,16 @@ public class bk_SceneTransition : MonoBehaviour {
                 SceneManager.LoadScene(14);
                 break;
         }
+    }
+
+    public void OpenLeaderBoard()
+    {
+        leaderBoard.SetActive(true);
+    }
+
+    public void OpenOption()
+    {
+        option.SetActive(true);
     }
 
     public void exitGame()

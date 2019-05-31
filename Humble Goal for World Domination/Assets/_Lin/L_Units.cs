@@ -130,9 +130,7 @@ public class L_Units : MonoBehaviour {
         if (other.gameObject.tag == "Target")
         {
             L_BuildManager.instance.AddScore(1);
-            Debug.Log("ADD One Point");
             powerUps.Units.Remove(gameObject.GetComponent<L_Units>());
-            print("unit remove from list");
             Destroy(this.gameObject);
         }
     }
