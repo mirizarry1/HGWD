@@ -12,6 +12,8 @@ public class bk_AOEBullet : MonoBehaviour
     [SerializeField] private ParticleSystem standardHit;
     [SerializeField] private ParticleSystem theBulletItself;
     private float timer;
+
+    private bool cantHit;
     // Use this for initialization
     //void OnCollisionEnter(Collision col)  // upon the fireball colliding with an object the particle effect goes off and the particle effect and fireball are destroyed
     //{
@@ -63,13 +65,21 @@ public class bk_AOEBullet : MonoBehaviour
 
     IEnumerator doDamageandParticleeffects(Collider other)
     {
-        other.gameObject.GetComponent<L_Units>().health -= damage;
-        print("I hit the player");
-        AddExplosiveForce(other.transform.position);
-        //Destroy(particleshot);
-        //theBulletItself.Stop();
-        standardHit.Play();
+        if (!cantHit)
+        {
+            
+            other.gameObject.GetComponent<L_Units>().health -= damage;
+            print("I hit the player");
+            AddExplosiveForce(other.transform.position);
+            //Destroy(particleshot);
+            //theBulletItself.Stop();
+            standardHit.Play();
+            cantHit = true;
+        }
+        
+
         yield return new WaitForSeconds(.5f);
+        cantHit = false;
         Destroy(gameObject);
         yield return null;
     }

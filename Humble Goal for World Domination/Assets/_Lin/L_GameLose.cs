@@ -53,7 +53,7 @@ public class L_GameLose : MonoBehaviour
 	        timeout.SetActive(true);
 	    }
 
-	    if (buildManager.totalMoney <= 0)
+	    if (buildManager.totalMoney <= 10)
 	    {
 	        if (units.Length == 0)
 	        {
