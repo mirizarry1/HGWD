@@ -7,6 +7,7 @@ public class bk_SceneTransition : MonoBehaviour {
 
     public GameObject leaderBoard;
     public GameObject option;
+    public GameObject credits;
 
     // Use this for initialization
     void Start () {
@@ -98,6 +99,16 @@ public class bk_SceneTransition : MonoBehaviour {
     public void CloseOption()
     {
         option.SetActive(false);
+    }
+
+    public void OpenCredits()
+    {
+        credits.SetActive(true);
+    }
+
+    public void CloseCredits()
+    {
+        credits.SetActive(false);
     }
 
     public void exitGame()

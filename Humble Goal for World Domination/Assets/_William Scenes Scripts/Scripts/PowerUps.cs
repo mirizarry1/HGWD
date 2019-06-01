@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PowerUps : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class PowerUps : MonoBehaviour
         second,
         third,
         fourth,
+        max,
     }
     public UpgradeState upgradeState;
     [SerializeField] private int firstUpgradeMoney;
@@ -30,6 +32,7 @@ public class PowerUps : MonoBehaviour
     [SerializeField] private int fourthUpgradeMoney;
     [SerializeField] private float HpUpgrade;
     [SerializeField] private float speedUpgrade;
+    [SerializeField] private Text upgradeLevel;
 
 
     // This is for initialization
@@ -120,7 +123,6 @@ public class PowerUps : MonoBehaviour
 
                 if (buildManager.totalMoney < firstUpgradeMoney)
                 {
-                    Debug.Log("Not enough money to build that!");
                     return;
                 }
 
@@ -135,6 +137,7 @@ public class PowerUps : MonoBehaviour
                     unit.speed += speedUpgrade;
                 }
 
+                upgradeLevel.text = "Level: 1";
                 upgradeState = UpgradeState.second;
 
                 break;
@@ -142,7 +145,6 @@ public class PowerUps : MonoBehaviour
 
                 if (buildManager.totalMoney < secondUpgradeMoney)
                 {
-                    Debug.Log("Not enough money to build that!");
                     return;
                 }
 
@@ -157,6 +159,7 @@ public class PowerUps : MonoBehaviour
                     unit.speed += speedUpgrade;
                 }
 
+                upgradeLevel.text = "Level: 2";
                 upgradeState = UpgradeState.third;
 
                 break;
@@ -164,7 +167,6 @@ public class PowerUps : MonoBehaviour
 
                 if (buildManager.totalMoney < thirdUpgradeMoney)
                 {
-                    Debug.Log("Not enough money to build that!");
                     return;
                 }
 
@@ -179,6 +181,7 @@ public class PowerUps : MonoBehaviour
                     unit.speed += speedUpgrade;
                 }
 
+                upgradeLevel.text = "Level: 3";
                 upgradeState = UpgradeState.fourth;
 
                 break;
@@ -186,7 +189,6 @@ public class PowerUps : MonoBehaviour
 
                 if (buildManager.totalMoney < fourthUpgradeMoney)
                 {
-                    Debug.Log("Not enough money to build that!");
                     return;
                 }
 
@@ -200,6 +202,9 @@ public class PowerUps : MonoBehaviour
                     unit.health += HpUpgrade;
                     unit.speed += speedUpgrade;
                 }
+
+                upgradeLevel.text = "Level: max";
+                upgradeState = UpgradeState.max;
 
                 break;
         }
