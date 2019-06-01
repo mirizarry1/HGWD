@@ -1007,13 +1007,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soliderUnits:
+  - prefab: {fileID: 1284687659871306, guid: 91c23f05d8d73f84495899e3483a94ac, type: 2}
+    cost: 10
   - prefab: {fileID: 1284687659871306, guid: 9f0ddcb58284407449a9650079649b4c, type: 2}
     cost: 10
   - prefab: {fileID: 1058643415554046, guid: 71b7bfb74e97bae488fe17536fc14d4c, type: 2}
     cost: 10
   - prefab: {fileID: 1189269085682308, guid: bc88a0ef97e54a649916defddfd3e289, type: 2}
-    cost: 10
-  - prefab: {fileID: 1284687659871306, guid: 91c23f05d8d73f84495899e3483a94ac, type: 2}
     cost: 20
 --- !u!114 &114624457858690324
 MonoBehaviour:

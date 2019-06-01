@@ -36,10 +36,14 @@ public class L_Units : MonoBehaviour {
     public bool inDudebut = false;
     //private L_Friendship[] friendUnit;
     [SerializeField] private ParticleSystem IDiagnoseYouWithDeath;
+    [SerializeField] private ParticleSystem standardHit;
+    [SerializeField] private ParticleSystem AOEExplosion;
     public bool dying = false;
     private void Awake()
     {
         IDiagnoseYouWithDeath.Stop();
+        standardHit.Stop();
+        AOEExplosion.Stop();
     }
     void Start ()
     {
@@ -74,7 +78,30 @@ public class L_Units : MonoBehaviour {
         Destroy(gameObject);
         yield return null;
     }
-
+    public void standardPlay()
+    {
+        StartCoroutine(doStandardBlastParticleeffects());
+    }
+    IEnumerator doStandardBlastParticleeffects()
+    {
+        //Destroy(particleshot);
+        //theBulletItself.Stop();
+        standardHit.Play();
+        yield return new WaitForSeconds(.5f);
+        standardHit.Stop();
+        yield return null;
+    }
+    public void aoePlay()
+    {
+        StartCoroutine(doAOEParticlesHit());
+    }
+    IEnumerator doAOEParticlesHit()
+    {
+        AOEExplosion.Play();
+        yield return new WaitForSeconds(.5f);
+        AOEExplosion.Stop();
+        yield return null;
+    }
     void Update ()
 	{
         //unit.SetDestination(target.position);

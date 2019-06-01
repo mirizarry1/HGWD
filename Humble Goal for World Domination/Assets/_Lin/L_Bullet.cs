@@ -39,27 +39,28 @@ public class L_Bullet : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            //other.gameObject.GetComponent<L_Units>().health -= damage;
-            //print("I hit the player");
+            other.gameObject.GetComponent<L_Units>().health -= damage;
+            print("I hit the player");
 
-            ////Destroy(particleshot);
+            //Destroy(particleshot);
             //standardHit.Play();
-            //Destroy(gameObject);
-            theBulletItself.Stop();
-            StartCoroutine(doDamageandParticleeffects(other));
+            other.gameObject.GetComponent<L_Units>().standardPlay();
+            Destroy(gameObject);
+            //theBulletItself.Stop();
+            //StartCoroutine(doDamageandParticleeffects(other));
         }
     }
 
-    IEnumerator doDamageandParticleeffects(Collider other)
-    {
-        other.gameObject.GetComponent<L_Units>().health -= damage;
-        print("I hit the player");
+    //IEnumerator doDamageandParticleeffects(Collider other)
+    //{
+    //    other.gameObject.GetComponent<L_Units>().health -= damage;
+    //    print("I hit the player");
 
-        //Destroy(particleshot);
-        //theBulletItself.Stop();
-        standardHit.Play();
-        yield return new WaitForSeconds(.5f);
-        Destroy(gameObject);
-        yield return null;
-    }
+    //    //Destroy(particleshot);
+    //    //theBulletItself.Stop();
+    //    standardHit.Play();
+    //    yield return new WaitForSeconds(.5f);
+    //    Destroy(gameObject);
+    //    yield return null;
+    //}
 }

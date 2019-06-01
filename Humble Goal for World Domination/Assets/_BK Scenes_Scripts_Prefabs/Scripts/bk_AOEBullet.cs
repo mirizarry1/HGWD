@@ -32,11 +32,12 @@ public class bk_AOEBullet : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             //other.gameObject.GetComponent<L_Units>().health -= damage;
-            //AddExplosiveForce(other.transform.position);
-            //print("AOE hit the player");
-            //Destroy(gameObject);
-            theBulletItself.Stop();
-            StartCoroutine(doDamageandParticleeffects(other));
+            AddExplosiveForce(other.transform.position);
+            print("AOE hit the player");
+            other.gameObject.GetComponent<L_Units>().aoePlay();
+            Destroy(gameObject);
+            //theBulletItself.Stop();
+            //StartCoroutine(doDamageandParticleeffects(other));
         }
     }
     void AddExplosiveForce(Vector3 centerOfExplosion)
@@ -63,24 +64,24 @@ public class bk_AOEBullet : MonoBehaviour
         }
     }
 
-    IEnumerator doDamageandParticleeffects(Collider other)
-    {
-        if (!cantHit)
-        {
+    //IEnumerator doDamageandParticleeffects(Collider other)
+    //{
+    //    if (!cantHit)
+    //    {
             
-            other.gameObject.GetComponent<L_Units>().health -= damage;
-            print("I hit the player");
-            AddExplosiveForce(other.transform.position);
-            //Destroy(particleshot);
-            //theBulletItself.Stop();
-            standardHit.Play();
-            cantHit = true;
-        }
+    //        other.gameObject.GetComponent<L_Units>().health -= damage;
+    //        print("I hit the player");
+    //        AddExplosiveForce(other.transform.position);
+    //        //Destroy(particleshot);
+    //        //theBulletItself.Stop();
+    //        standardHit.Play();
+    //        cantHit = true;
+    //    }
         
 
-        yield return new WaitForSeconds(.5f);
-        cantHit = false;
-        Destroy(gameObject);
-        yield return null;
-    }
+    //    yield return new WaitForSeconds(.5f);
+    //    cantHit = false;
+    //    Destroy(gameObject);
+    //    yield return null;
+    //}
 }

@@ -18,7 +18,17 @@ public class L_BuildPoint : MonoBehaviour {
     //-----------------PowerUps-----------------------------
     public PowerUps powerUps;
 
+
+    public GameObject spawnIndicator;
     // Use this for initialization
+    private void Awake()
+    {
+
+        if (spawnIndicator != null)
+        {
+            spawnIndicator.SetActive(false);
+        }
+    }
     void Start ()
     {
         rend = GetComponent<Renderer>();
@@ -37,24 +47,24 @@ public class L_BuildPoint : MonoBehaviour {
 		
 	}
     
-    void OnMouseDown()
-    {
-        print("this gameobject that was clicked on is called: " + this.gameObject.name);
-        buildManager.SelectTurretToBuild(this.gameObject.GetComponent<bk_setUnitForSpawner>().spawnpointUnitType);
-        if (!buildManager.CanBuild)
-            return;
-        if (this.gameObject.GetComponent<bk_setUnitForSpawner>().spawnpointUnitType.prefab!=null)
-        {
-            //buildManager.SelectTurretToBuild(this.gameObject.GetComponent<bk_setUnitForSpawner>().spawnpointUnitType);
-            BuildTurret(buildManager.GetTurretToBuild());
-        }
-    }
+    //void OnMouseDown()
+    //{
+    //    print("this gameobject that was clicked on is called: " + this.gameObject.name);
+    //    buildManager.SelectTurretToBuild(this.gameObject.GetComponent<bk_setUnitForSpawner>().spawnpointUnitType);
+    //    if (!buildManager.CanBuild)
+    //        return;
+    //    if (this.gameObject.GetComponent<bk_setUnitForSpawner>().spawnpointUnitType.prefab!=null)
+    //    {
+    //        //buildManager.SelectTurretToBuild(this.gameObject.GetComponent<bk_setUnitForSpawner>().spawnpointUnitType);
+    //        BuildTurret(buildManager.GetTurretToBuild());
+    //    }
+    //}
     
     public Vector3 GetBuildPosition()
     {
         return transform.position + fixedPosition;
     }
-    void BuildTurret(L_TowerInfo blueprint)
+    public void BuildTurret(L_TowerInfo blueprint)
     {
         if (buildManager.totalMoney < blueprint.cost)
         {
@@ -79,25 +89,25 @@ public class L_BuildPoint : MonoBehaviour {
 
     }
     
-    void OnMouseEnter()
-    {
-        if (EventSystem.current.IsPointerOverGameObject())
-            return;
+    //void OnMouseEnter()
+    //{
+    //    if (EventSystem.current.IsPointerOverGameObject())
+    //        return;
 
-        if (!buildManager.CanBuild)
-            return;
+    //    if (!buildManager.CanBuild)
+    //        return;
 
-        if (buildManager.HasMoney)
-        {
-            rend.material.color = enterColor;
+    //    if (buildManager.HasMoney)
+    //    {
+    //        rend.material.color = enterColor;
 
-        }
-        else
-        {
-            rend.material.color = exitColor;
-        }
+    //    }
+    //    else
+    //    {
+    //        rend.material.color = exitColor;
+    //    }
 
-    }
+    //}
 
     void OnMouseExit()
     {
