@@ -3484,7 +3484,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-751018
+  m_Name: pb_Mesh-542944
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -11759,6 +11759,11 @@ Prefab:
       propertyPath: fixedPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114858901764495444, guid: ff3021682a664a04b864f9fc7e170ad4,
+        type: 2}
+      propertyPath: spawnIndicator
+      value: 
+      objectReference: {fileID: 1945293017}
     m_RemovedComponents:
     - {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: ff3021682a664a04b864f9fc7e170ad4, type: 2}
@@ -11787,14 +11792,11 @@ MonoBehaviour:
   listofButtonImages:
   - {fileID: 2143066819}
   - {fileID: 2143066818}
-  - {fileID: 2143066817}
   - {fileID: 2143066816}
---- !u!114 &551287070 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114858901764495444, guid: ff3021682a664a04b864f9fc7e170ad4,
-    type: 2}
-  m_PrefabInternal: {fileID: 551287066}
-  m_Script: {fileID: 11500000, guid: f3174e6e57d69794f98d5f4d9b9f020d, type: 3}
+  - {fileID: 1671474419}
+  - {fileID: 1901372355}
+  - {fileID: 1569622770}
+  - {fileID: 2143066817}
 --- !u!1 &553579036
 GameObject:
   m_ObjectHideFlags: 0
@@ -21063,7 +21065,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4553497793878082, guid: 44209bc1ec98b294f8a445dfee99b483, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -21.92
       objectReference: {fileID: 0}
     - target: {fileID: 4553497793878082, guid: 44209bc1ec98b294f8a445dfee99b483, type: 2}
       propertyPath: m_LocalRotation.x
@@ -24957,6 +24959,11 @@ Prefab:
       propertyPath: fixedPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
+        type: 2}
+      propertyPath: spawnIndicator
+      value: 
+      objectReference: {fileID: 1587477507}
     m_RemovedComponents:
     - {fileID: 114858901764495444, guid: ff3021682a664a04b864f9fc7e170ad4, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: ff3021682a664a04b864f9fc7e170ad4, type: 2}
@@ -24985,14 +24992,11 @@ MonoBehaviour:
   listofButtonImages:
   - {fileID: 2143066819}
   - {fileID: 2143066818}
-  - {fileID: 2143066817}
   - {fileID: 2143066816}
---- !u!114 &1332886089 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1332886085}
-  m_Script: {fileID: 11500000, guid: f3174e6e57d69794f98d5f4d9b9f020d, type: 3}
+  - {fileID: 1671474419}
+  - {fileID: 1901372355}
+  - {fileID: 1569622770}
+  - {fileID: 2143066817}
 --- !u!1 &1336954059
 GameObject:
   m_ObjectHideFlags: 0
@@ -28294,6 +28298,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1569622770 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114105873012466548, guid: 7aa6289b818cf1241abbf42187783e25,
+    type: 2}
+  m_PrefabInternal: {fileID: 2143066815}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!43 &1572081991
 Mesh:
   m_ObjectHideFlags: 0
@@ -28750,26 +28760,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1935150690169236, guid: 44209bc1ec98b294f8a445dfee99b483,
     type: 2}
   m_PrefabInternal: {fileID: 1752164991}
---- !u!114 &1587477509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1587477507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3b7f9fb6bf2b0241a8c0fde5389a1e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unitToSpawn:
-    prefab: {fileID: 0}
-    cost: 0
-  spawningPlace: {fileID: 1332886089}
-  listofButtonImages:
-  - {fileID: 2143066819}
-  - {fileID: 2143066818}
-  - {fileID: 2143066817}
-  - {fileID: 2143066816}
 --- !u!1001 &1591709120
 Prefab:
   m_ObjectHideFlags: 0
@@ -29612,7 +29602,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh83284
+  m_Name: pb_Mesh218952
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -30863,6 +30853,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1671474419 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114623842324515608, guid: 7aa6289b818cf1241abbf42187783e25,
+    type: 2}
+  m_PrefabInternal: {fileID: 2143066815}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1698426318
 Prefab:
   m_ObjectHideFlags: 0
@@ -32471,6 +32467,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4822957286807526, guid: 44209bc1ec98b294f8a445dfee99b483, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.44
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44209bc1ec98b294f8a445dfee99b483, type: 2}
   m_IsPrefabAsset: 0
@@ -33268,7 +33268,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-7973418
+  m_Name: pb_Mesh219288
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -34966,6 +34966,12 @@ Mesh:
   m_MeshMetrics[0]: 1
   m_MeshMetrics[1]: 1
   m_MeshOptimized: 0
+--- !u!114 &1901372355 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114976410018345968, guid: 7aa6289b818cf1241abbf42187783e25,
+    type: 2}
+  m_PrefabInternal: {fileID: 2143066815}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1926651659
 Prefab:
   m_ObjectHideFlags: 0
@@ -36243,26 +36249,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1935150690169236, guid: 44209bc1ec98b294f8a445dfee99b483,
     type: 2}
   m_PrefabInternal: {fileID: 1119626412}
---- !u!114 &1945293019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1945293017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3b7f9fb6bf2b0241a8c0fde5389a1e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unitToSpawn:
-    prefab: {fileID: 0}
-    cost: 0
-  spawningPlace: {fileID: 551287070}
-  listofButtonImages:
-  - {fileID: 2143066819}
-  - {fileID: 2143066818}
-  - {fileID: 2143066817}
-  - {fileID: 2143066816}
 --- !u!1001 &1952807429
 Prefab:
   m_ObjectHideFlags: 0

@@ -1777,6 +1777,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4822957286807526, guid: 44209bc1ec98b294f8a445dfee99b483, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.55
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44209bc1ec98b294f8a445dfee99b483, type: 2}
   m_IsPrefabAsset: 0
@@ -9420,6 +9424,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4822957286807526, guid: 44209bc1ec98b294f8a445dfee99b483, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44209bc1ec98b294f8a445dfee99b483, type: 2}
   m_IsPrefabAsset: 0
@@ -9699,6 +9707,11 @@ Prefab:
       propertyPath: waypointNum
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
+        type: 2}
+      propertyPath: spawnIndicator
+      value: 
+      objectReference: {fileID: 278324556}
     m_RemovedComponents:
     - {fileID: 114858901764495444, guid: ff3021682a664a04b864f9fc7e170ad4, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: ff3021682a664a04b864f9fc7e170ad4, type: 2}
@@ -9727,8 +9740,11 @@ MonoBehaviour:
   listofButtonImages:
   - {fileID: 632998336}
   - {fileID: 632998335}
-  - {fileID: 632998334}
   - {fileID: 632998333}
+  - {fileID: 632998339}
+  - {fileID: 632998338}
+  - {fileID: 632998337}
+  - {fileID: 632998334}
 --- !u!114 &503026714 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
@@ -13855,6 +13871,24 @@ MonoBehaviour:
 --- !u!114 &632998336 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114633445757232720, guid: 7aa6289b818cf1241abbf42187783e25,
+    type: 2}
+  m_PrefabInternal: {fileID: 632998332}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &632998337 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114105873012466548, guid: 7aa6289b818cf1241abbf42187783e25,
+    type: 2}
+  m_PrefabInternal: {fileID: 632998332}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &632998338 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114976410018345968, guid: 7aa6289b818cf1241abbf42187783e25,
+    type: 2}
+  m_PrefabInternal: {fileID: 632998332}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &632998339 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114623842324515608, guid: 7aa6289b818cf1241abbf42187783e25,
     type: 2}
   m_PrefabInternal: {fileID: 632998332}
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -18003,7 +18037,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-8008906
+  m_Name: pb_Mesh297018
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -18651,6 +18685,11 @@ Prefab:
       propertyPath: fixedPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
+        type: 2}
+      propertyPath: spawnIndicator
+      value: 
+      objectReference: {fileID: 1440048598}
     m_RemovedComponents:
     - {fileID: 114858901764495444, guid: ff3021682a664a04b864f9fc7e170ad4, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: ff3021682a664a04b864f9fc7e170ad4, type: 2}
@@ -18679,8 +18718,11 @@ MonoBehaviour:
   listofButtonImages:
   - {fileID: 632998336}
   - {fileID: 632998335}
-  - {fileID: 632998334}
   - {fileID: 632998333}
+  - {fileID: 632998339}
+  - {fileID: 632998338}
+  - {fileID: 632998337}
+  - {fileID: 632998334}
 --- !u!114 &835435468 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
@@ -20456,7 +20498,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh166832
+  m_Name: pb_Mesh297226
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -20689,6 +20731,10 @@ Prefab:
     - target: {fileID: 4553497793878082, guid: 44209bc1ec98b294f8a445dfee99b483, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822957286807526, guid: 44209bc1ec98b294f8a445dfee99b483, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.51
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44209bc1ec98b294f8a445dfee99b483, type: 2}
@@ -23958,7 +24004,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-8009964
+  m_Name: pb_Mesh244116
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -28405,7 +28451,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh167156
+  m_Name: pb_Mesh244106
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -32329,6 +32375,11 @@ Prefab:
       propertyPath: waypointNum
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
+        type: 2}
+      propertyPath: spawnIndicator
+      value: 
+      objectReference: {fileID: 295179871}
     m_RemovedComponents:
     - {fileID: 114858901764495444, guid: ff3021682a664a04b864f9fc7e170ad4, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: ff3021682a664a04b864f9fc7e170ad4, type: 2}
@@ -32357,8 +32408,11 @@ MonoBehaviour:
   listofButtonImages:
   - {fileID: 632998336}
   - {fileID: 632998335}
-  - {fileID: 632998334}
   - {fileID: 632998333}
+  - {fileID: 632998339}
+  - {fileID: 632998338}
+  - {fileID: 632998337}
+  - {fileID: 632998334}
 --- !u!114 &1566163528 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
@@ -32446,6 +32500,11 @@ Prefab:
       propertyPath: waypointNum
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
+        type: 2}
+      propertyPath: spawnIndicator
+      value: 
+      objectReference: {fileID: 1185538054}
     m_RemovedComponents:
     - {fileID: 114858901764495444, guid: ff3021682a664a04b864f9fc7e170ad4, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: ff3021682a664a04b864f9fc7e170ad4, type: 2}
@@ -32474,8 +32533,11 @@ MonoBehaviour:
   listofButtonImages:
   - {fileID: 632998336}
   - {fileID: 632998335}
-  - {fileID: 632998334}
   - {fileID: 632998333}
+  - {fileID: 632998339}
+  - {fileID: 632998338}
+  - {fileID: 632998337}
+  - {fileID: 632998334}
 --- !u!114 &1574639464 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
@@ -39563,6 +39625,10 @@ Prefab:
     - target: {fileID: 4553497793878082, guid: 44209bc1ec98b294f8a445dfee99b483, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822957286807526, guid: 44209bc1ec98b294f8a445dfee99b483, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44209bc1ec98b294f8a445dfee99b483, type: 2}
