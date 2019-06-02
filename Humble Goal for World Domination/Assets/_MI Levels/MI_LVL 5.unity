@@ -6248,7 +6248,6 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114639815251726696, guid: ff3021682a664a04b864f9fc7e170ad4,
     type: 2}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 319216009}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -7057,11 +7056,6 @@ Transform:
   m_GameObject: {fileID: 321845218}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.01, y: 1.6796951, z: -5.78}
-=======
-  m_GameObject: {fileID: 281623350}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.265625, y: 2.9589844, z: 165.56836}
->>>>>>> parent of d800a90... Updated levels 5-10
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1896312568}
@@ -17201,7 +17195,6 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
     type: 2}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 827382428}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -17594,23 +17587,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _entityType: 0
 --- !u!43 &846317540
-=======
-  m_GameObject: {fileID: 1073067437}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.015625, y: 2.9589844, z: 167.01337}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 722504492}
-  - {fileID: 939964381}
-  - {fileID: 1905364532}
-  - {fileID: 1666914089}
-  - {fileID: 145979082}
-  - {fileID: 1939294517}
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &1079894350
->>>>>>> parent of d800a90... Updated levels 5-10
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -30077,15 +30053,9 @@ Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 1466706485}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -8, y: 1, z: 1}
-=======
-  m_GameObject: {fileID: 1376257043}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5524285, y: 1.2792969, z: 162.03737}
->>>>>>> parent of d800a90... Updated levels 5-10
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 199298212}
@@ -38388,11 +38358,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1896312566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
   m_LocalPosition: {x: -9.990283, y: -0.20000768, z: 171.7978}
-=======
-  m_LocalPosition: {x: -9.990283, y: 1.2792892, z: 171.7978}
->>>>>>> parent of d800a90... Updated levels 5-10
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 321845219}
@@ -38405,7 +38371,6 @@ Transform:
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1905364531
-<<<<<<< HEAD
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38859,8 +38824,6 @@ Mesh:
   m_MeshMetrics[1]: 1
   m_MeshOptimized: 0
 --- !u!1 &1939294516
-=======
->>>>>>> parent of d800a90... Updated levels 5-10
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
