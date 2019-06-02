@@ -54,7 +54,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 913fdcdcc846a6c4c9e81c6d4ac043d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxtime: 30
+  maxtime: 180
   totalTime: 0
   timeText: {fileID: 0}
   lostScreen: {fileID: 0}
@@ -94,7 +94,17 @@ MonoBehaviour:
   speedUpMultiplier: 2
   speedUpTime: 5
   invulnerableTime: 5
-  invulnerableMultiplier: 1.5
+  invulnerableMultiplier: 1.2
+  speedTime: 0
+  invTime: 0
+  upgradeState: 0
+  firstUpgradeMoney: 0
+  secondUpgradeMoney: 0
+  thirdUpgradeMoney: 0
+  fourthUpgradeMoney: 0
+  HpUpgrade: 0
+  speedUpgrade: 0
+  upgradeLevel: {fileID: 0}
 --- !u!114 &114561544647312932
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -106,7 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352c861a4e53476468a2a8c97743fc19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalMoney: 1000
+  totalMoney: 600
   addCircuits: 3
   moneyText: {fileID: 0}
   targeTransform: {fileID: 0}

@@ -42,7 +42,15 @@ public class L_GameLose : MonoBehaviour
 	        totalTime -= Time.deltaTime;
 	        minit = totalTime / 60;
 	        second = totalTime % 60;
-	        timeText.text = ((int)minit).ToString() + ":" + ((int)second).ToString();
+            if (second < 10)
+            {
+                Debug.Log("We're in the if!");
+                timeText.text = ((int)minit).ToString() + ":" + "0" + ((int)second).ToString();
+            }
+            else
+            {
+                timeText.text = ((int)minit).ToString() + ":" + ((int)second).ToString();
+            }
         }
 	    else
 	    {
