@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 54496701108269726}
   - component: {fileID: 136720649689929912}
   m_Layer: 11
-  m_Name: Eggbot
+  m_Name: Foddertron
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
