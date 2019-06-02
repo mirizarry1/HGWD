@@ -41,6 +41,24 @@ public class PowerUps : MonoBehaviour
         buildManager = L_BuildManager.instance;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            MovementSpeedUp();
+        }
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Invulnerable();
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Upgrade();
+        }
+    }
+
     public void MovementSpeedUp()
     {
         foreach (var unit in Units)
