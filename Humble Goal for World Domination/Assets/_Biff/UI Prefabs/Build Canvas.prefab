@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 114154837979270344}
   - component: {fileID: 114803045486398302}
   - component: {fileID: 114590548928986616}
-  - component: {fileID: 114116520693779560}
+  - component: {fileID: 114423457872635920}
   m_Layer: 5
   m_Name: Build Canvas
   m_TagString: Untagged
@@ -558,13 +558,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114423457872635920}
         m_MethodName: spawnUnitForDrag
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -643,42 +643,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114423457872635920}
         m_MethodName: spawnUnitForDrag
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114116520693779560
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1411852013847276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3b7f9fb6bf2b0241a8c0fde5389a1e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unitToSpawn:
-    prefab: {fileID: 0}
-    cost: 0
-  spawningPlace: {fileID: 0}
-  listofButtonImages:
-  - {fileID: 114006042186032444}
-  - {fileID: 114535250112216948}
-  - {fileID: 114588476878529670}
-  - {fileID: 114098558280969038}
-  - {fileID: 114418034762797854}
-  - {fileID: 114510684292696476}
-  - {fileID: 114633445757232720}
 --- !u!114 &114138377697750188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1093,19 +1070,37 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114423457872635920}
         m_MethodName: spawnUnitForDrag
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114423457872635920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1411852013847276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b95c07c7260ded04891c2829ca5584ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  untaggedunits:
+  - {fileID: 1284687659871306, guid: ce6e6d06efdd9fc4591feea967e7ea9d, type: 2}
+  - {fileID: 1058643415554046, guid: 847e1d0af9eb08946b8e4b1cb88ade02, type: 2}
+  - {fileID: 1189269085682308, guid: 80a1f646a0f1a1048b28651ee0420b38, type: 2}
+  - {fileID: 1284687659871306, guid: ed725aa75ca976c4b874c140d8c766e3, type: 2}
+  spawnpointForDrag: {fileID: 0}
+  isSpawnReady: 0
 --- !u!114 &114460509398741454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1230,13 +1225,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114423457872635920}
         m_MethodName: spawnUnitForDrag
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1388,13 +1383,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114423457872635920}
         m_MethodName: spawnUnitForDrag
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1440,7 +1435,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114423457872635920}
         m_MethodName: spawnUnitForDrag
         m_Mode: 3
         m_Arguments:
@@ -1469,16 +1464,10 @@ MonoBehaviour:
     cost: 10
   - prefab: {fileID: 1284687659871306, guid: 9f0ddcb58284407449a9650079649b4c, type: 2}
     cost: 10
-  - prefab: {fileID: 1189269085682308, guid: bc88a0ef97e54a649916defddfd3e289, type: 2}
-    cost: 10
   - prefab: {fileID: 1058643415554046, guid: 71b7bfb74e97bae488fe17536fc14d4c, type: 2}
-    cost: 40
-  - prefab: {fileID: 1093458652185242, guid: 287d2448043083440b3725dc2dd9883a, type: 2}
+    cost: 10
+  - prefab: {fileID: 1189269085682308, guid: bc88a0ef97e54a649916defddfd3e289, type: 2}
     cost: 20
-  - prefab: {fileID: 1240372455076018, guid: 01918c8bf721b8c42bd4b65117554f9f, type: 2}
-    cost: 20
-  - prefab: {fileID: 1067592057935830, guid: 3b37dade296141b48ad68fa246bb725a, type: 2}
-    cost: 50
 --- !u!114 &114613804831393058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1578,13 +1567,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114423457872635920}
         m_MethodName: spawnUnitForDrag
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
