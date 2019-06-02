@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 54740629736024946}
   - component: {fileID: 114872414597882408}
   m_Layer: 11
-  m_Name: Armorotron
+  m_Name: RX76
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -495,7 +495,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: c68a01b4c9b5143488f2aaa8f23b2616, type: 2}
+  - {fileID: 2100000, guid: dfa5fb465f40d43e38f03a1895d3e86d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -549,13 +549,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfUnit: 2
-  health: 30
+  health: 50
   maxHealth: 0
   isDead: 0
   targetWayPoint: {fileID: 0}
   wayPointIndex: 0
   WP: {fileID: 0}
-  speed: 5
+  speed: 7
   waypoint: 0
   isInvulnerable: 0
   powerUps: {fileID: 0}
