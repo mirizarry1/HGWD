@@ -602,7 +602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 298d102a3829b2945b0d519d13d62d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typeOfUnit: 6
+  typeOfUnit: 1
   health: 10
   maxHealth: 0
   isDead: 0
