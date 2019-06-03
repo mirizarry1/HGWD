@@ -51,7 +51,7 @@ public class L_Units : MonoBehaviour {
 
         //******************************
         health += powerUpHP;
-        speed += powerUpHP;
+        speed += powerUpSpeed;
         //******************************
 
         switch (typeOfUnit)
