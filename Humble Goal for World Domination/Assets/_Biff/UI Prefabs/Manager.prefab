@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4724402780888076}
   - component: {fileID: 114561544647312932}
   - component: {fileID: 114326131784413998}
-  - component: {fileID: 114453033421102846}
   - component: {fileID: 114495935004666356}
   m_Layer: 0
   m_Name: Manager
@@ -63,22 +62,6 @@ MonoBehaviour:
   timeout: {fileID: 0}
   nounit: {fileID: 0}
   units: []
---- !u!114 &114453033421102846
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1966279680991214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 337e3438b96378a47b76fdc94fcb85a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  dText: {fileID: 0}
-  dBox: {fileID: 0}
-  levelSelect: {fileID: 0}
-  dMan: {fileID: 0}
 --- !u!114 &114495935004666356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -98,12 +81,12 @@ MonoBehaviour:
   speedTime: 0
   invTime: 0
   upgradeState: 0
-  firstUpgradeMoney: 0
-  secondUpgradeMoney: 0
-  thirdUpgradeMoney: 0
-  fourthUpgradeMoney: 0
-  HpUpgrade: 0
-  speedUpgrade: 0
+  firstUpgradeMoney: 50
+  secondUpgradeMoney: 300
+  thirdUpgradeMoney: 450
+  fourthUpgradeMoney: 600
+  HpUpgrade: 10
+  speedUpgrade: 0.5
   upgradeLevel: {fileID: 0}
 --- !u!114 &114561544647312932
 MonoBehaviour:
@@ -116,16 +99,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352c861a4e53476468a2a8c97743fc19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalMoney: 600
+  totalMoney: 300
   addCircuits: 3
   moneyText: {fileID: 0}
   targeTransform: {fileID: 0}
   totalScore: 0
   scoreBoard: {fileID: 0}
   wayP:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   UiCanvas: {fileID: 0}
   BuildCanvas: {fileID: 0}

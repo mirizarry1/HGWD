@@ -549,13 +549,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeOfUnit: 1
-  health: 10
+  health: 20
   maxHealth: 0
   isDead: 0
   targetWayPoint: {fileID: 0}
   wayPointIndex: 0
   WP: {fileID: 0}
-  speed: 5
+  speed: 3.5
   waypoint: 0
   isInvulnerable: 0
   powerUps: {fileID: 0}

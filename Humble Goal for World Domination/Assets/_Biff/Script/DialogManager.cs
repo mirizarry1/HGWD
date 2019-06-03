@@ -35,7 +35,7 @@ public class DialogManager : MonoBehaviour {
         
 
     
-        if (dActive && Input.GetKeyDown("space"))
+        if (dActive && (Input.GetKeyDown("left shift") || Input.GetKeyDown("right shift")))
         {
          
             dText.text = dQueue.Dequeue();
