@@ -13125,7 +13125,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh23480
+  m_Name: pb_Mesh574286
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -14923,7 +14923,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-235230
+  m_Name: pb_Mesh-4811878
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -15578,7 +15578,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-234160
+  m_Name: pb_Mesh-4810748
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -15974,6 +15974,11 @@ Prefab:
       propertyPath: spawnIndicator
       value: 
       objectReference: {fileID: 939901387}
+    - target: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
+        type: 2}
+      propertyPath: fixedPosition.y
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114858901764495444, guid: ff3021682a664a04b864f9fc7e170ad4, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: ff3021682a664a04b864f9fc7e170ad4, type: 2}
@@ -15983,27 +15988,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4784930423412702, guid: ff3021682a664a04b864f9fc7e170ad4,
     type: 2}
   m_PrefabInternal: {fileID: 622758480}
---- !u!1 &622758482 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1702651558601518, guid: ff3021682a664a04b864f9fc7e170ad4,
-    type: 2}
-  m_PrefabInternal: {fileID: 622758480}
---- !u!114 &622758483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 622758482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bef99c60c6188c46aa9f7d86d22d470, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  listofButtonImages:
-  - {fileID: 210007715}
-  - {fileID: 210007714}
-  - {fileID: 210007713}
-  - {fileID: 210007712}
 --- !u!1001 &627096947
 Prefab:
   m_ObjectHideFlags: 0
@@ -17221,7 +17205,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-234076
+  m_Name: pb_Mesh-4810664
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -17869,7 +17853,7 @@ GameObject:
   - component: {fileID: 703158167}
   - component: {fileID: 703158166}
   m_Layer: 0
-  m_Name: Waypoint0 (2)
+  m_Name: Waypoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17919,6 +17903,7 @@ GameObject:
   m_Component:
   - component: {fileID: 716097294}
   - component: {fileID: 716097295}
+  - component: {fileID: 716097296}
   m_Layer: 0
   m_Name: waypoint (1)
   m_TagString: Untagged
@@ -17933,7 +17918,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 716097293}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.07, y: 0.15, z: 3.13}
+  m_LocalPosition: {x: -2.07, y: 0.553, z: 3.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1539155290}
@@ -17950,6 +17935,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3736689b2b331d41b184318197238a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &716097296
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 716097293}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &719098898
 Prefab:
   m_ObjectHideFlags: 0
@@ -20501,7 +20498,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 799987996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.05, y: 0.14999998, z: -1.8300018}
+  m_LocalPosition: {x: -4.05, y: 0.51, z: -1.8300018}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1539155290}
@@ -21096,7 +21093,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh23594
+  m_Name: pb_Mesh574402
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -26059,6 +26056,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114561544647312932, guid: 7077be4fb0dd4a248b8ae6db90d2cff7,
+        type: 2}
+      propertyPath: wayP.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4724402780888076, guid: 7077be4fb0dd4a248b8ae6db90d2cff7, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.9011679
@@ -26110,7 +26112,7 @@ Prefab:
         type: 2}
       propertyPath: wayP.Array.data[0]
       value: 
-      objectReference: {fileID: 703158166}
+      objectReference: {fileID: 970343414}
     - target: {fileID: 114561544647312932, guid: 7077be4fb0dd4a248b8ae6db90d2cff7,
         type: 2}
       propertyPath: wayP.Array.data[1]
@@ -26120,7 +26122,7 @@ Prefab:
         type: 2}
       propertyPath: wayP.Array.data[2]
       value: 
-      objectReference: {fileID: 970343414}
+      objectReference: {fileID: 703158166}
     - target: {fileID: 114561544647312932, guid: 7077be4fb0dd4a248b8ae6db90d2cff7,
         type: 2}
       propertyPath: wayP.Array.data[3]
@@ -28280,7 +28282,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-235764
+  m_Name: pb_Mesh-4812406
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -32533,7 +32535,7 @@ Prefab:
     - target: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
         type: 2}
       propertyPath: waypointNum
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
         type: 2}
@@ -34051,7 +34053,7 @@ GameObject:
   - component: {fileID: 1539155290}
   - component: {fileID: 1539155289}
   m_Layer: 0
-  m_Name: Waypoint0 (3)
+  m_Name: Waypoint3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34097,7 +34099,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh24018
+  m_Name: pb_Mesh574856
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -34931,7 +34933,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-234830
+  m_Name: pb_Mesh-4811484
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -37479,7 +37481,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh23902
+  m_Name: pb_Mesh-4813248
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -37765,7 +37767,7 @@ Prefab:
     - target: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
         type: 2}
       propertyPath: waypointNum
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114274762166588734, guid: ff3021682a664a04b864f9fc7e170ad4,
         type: 2}
@@ -37985,7 +37987,7 @@ GameObject:
   - component: {fileID: 1724393576}
   - component: {fileID: 1724393575}
   m_Layer: 0
-  m_Name: Waypoint0 (1)
+  m_Name: Waypoint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40223,7 +40225,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-236918
+  m_Name: pb_Mesh-4813622
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -43628,7 +43630,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-235800
+  m_Name: pb_Mesh-4812442
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -43982,6 +43984,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1938918782}
   - component: {fileID: 1938918783}
+  - component: {fileID: 1938918784}
   m_Layer: 0
   m_Name: waypoint
   m_TagString: Untagged
@@ -44013,6 +44016,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3736689b2b331d41b184318197238a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1938918784
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1938918781}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1939046605
 Prefab:
   m_ObjectHideFlags: 0
@@ -44968,7 +44983,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1989510908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8799996, y: 0.14999998, z: -1.83}
+  m_LocalPosition: {x: 1.8799996, y: 0.597, z: -1.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1539155290}
